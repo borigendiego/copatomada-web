@@ -4,7 +4,165 @@
 @tailwind components;
 @tailwind utilities;
 
+
+h1 {
+    font-size: 48px;
+}
+
+//Banner
+
+.image1 {
+    background-image: url('/assets/images/banner-bg.jpg');
+    opacity: 1;
+}
+
+.image2 {
+    background-image: url('/assets/images/beafeter.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #DADBDF;
+    opacity: 1;
+
+}
+
+//Conocenos Menu
+
+
+.conocenos-button {
+    cursor: pointer;
+    display: flex;
+    padding: 20px;
+
+    p {
+        padding-right: 5px;
+    }
+
+    &:hover {
+        p {
+            text-decoration: underline;
+        }
+    }
+}
+
+.close-svg {
+    transform: rotate(45deg);
+    filter: invert(99%) sepia(16%) saturate(2%) hue-rotate(158deg) brightness(113%) contrast(100%);
+    cursor: pointer;
+}
+
+.close-svg-modal {
+    transform: rotate(45deg);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10%;
+}
+
+.menu {
+    transform: translateX(100%);
+    transition: all 600ms ease;
+    top: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background-color: #000;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-open {
+    transform: translateX(0);
+  }
+  
+.backdrop {
+    display: none;
+    position: absolute;
+    font-size: larger;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.backdrop-open {
+    display: block;
+    cursor: pointer;
+    z-index: 30;
+    right: 2%;
+    font-weight: bold;
+    opacity: 1;
+}
+
 .menu-section {
-    height: 600px;
-    width: 200px;
+    height: 550px;
+    width: 250px;
+    border: solid 1px crimson;
+    transition: background-color 200ms ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin: 25px 0;
+    
+    p {
+        font-size: 64px;
+        transform: rotate(-90deg);
+        color: crimson;
+    }
+
+    .menu-svg {
+        filter: invert(99%) sepia(16%) saturate(2%) hue-rotate(158deg) brightness(113%) contrast(100%);
+        position: absolute;
+        left: 20px;
+        top: 30px;    
+      }
+
+
+    &:hover {
+        background-color: crimson;
+        cursor: pointer;
+
+        p {
+            color: #000;
+        }
+
+        .menu-svg {
+            filter: invert(0%);
+        }
+    }
+}
+
+//Componente base
+
+.basecomp-r {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/paper-bg.png');
+
+    h1 {
+        font-weight: bold;
+        color: black;
+    }
+
+    p {
+        color: #000;
+    }
+}
+
+//footer
+
+.footer-image {
+    background-image: url('/assets/images/paper-bg-rounded.png');
+    padding: 20px;
+}
+
+.footer-a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 4px 0;
 }
