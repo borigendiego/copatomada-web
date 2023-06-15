@@ -15,7 +15,7 @@ const Banner = () => {
 
 
   return (
-    <div className={`md:h-screen transition-all duration-500 ease-in-out opacity-30 ${selectedBanner ? 'image1' : 'image2' }`}>
+    <div className={`h-screen transition-all duration-500 ease-in-out opacity-30 ${selectedBanner ? 'image1' : 'image2' }`}>
       
     </div>
   )

@@ -35,15 +35,15 @@ const Header = () => {
                 width={80}
                 height={100}
                 alt={'Diversity at Employment logo'}
-                className={'mr-6'}
+                className={'md:mr-6'}
             />
         </a>
-        <div className='flex items-center ml-12'>
+        <div className='flex items-center md:ml-12'>
             {
                 NAV_DATA.map((item, index) =>
                     <a 
                         href={item.linkTo}
-                        className={'mx-6 text-black opacity-50 font-semibold duration-300 hover:opacity-100'}
+                        className={'md:mx-6 text-black opacity-50 font-semibold duration-300 hover:opacity-100'}
                     >{item.label}</a> 
                 )
             }

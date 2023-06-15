@@ -15,10 +15,10 @@ const BaseComp = ({title, image, text, button}:BaseProps) => {
           <Image src={image} width={750} height={400} alt='Image'/>
         </div>
         <div className='basecomp-r'>
-          <div className='md:w-[600px]'>
+          <div className='md:w-[600px] md:h-[85%]'>
             <h1 className='my-2'>{title}</h1>
             <p className='my-2 md:w-3/4'>{text}</p>
-            <button className={`${button ? 'my-2 bg-red-600 rounded-xl w-fit py-2 px-8 text-white' : 'hidden'}`}>{button}</button>
+            <button className={`${button ? 'mt-6 bg-[#DB0031] rounded-[50px] w-fit py-2 px-8 text-white' : 'hidden'}`}>{button}</button>
           </div>
         </div>
       </div>

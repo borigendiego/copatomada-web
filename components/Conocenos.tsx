@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import Menu from './Menu';
 import BackDrop from './BackDrop';
 import Image from 'next/image';
+import RedLayout from './Commons/RedLayout';
 
 const Conocenos = () => {
 

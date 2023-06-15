@@ -22,7 +22,7 @@ const MENU_DATA = [
                                 <Image src={'/assets/images/locales.png'} width={750} height={400} alt='Image'/>
                             </div>
                             <div className='basecomp-r'>
-                                <div className='md:w-[600px]'>
+                                <div className='md:w-[600px] md:h-4/5'>
                                     <div className="flex md:flex-col md:mb-8">
                                         <p className="font-bold md:pb-2">Copa Buenos Aires</p>
                                         <a href="" className="flex"><img src="/assets/images/location-svg.svg" className="md:mr-2" alt="" /><p className="hover:underline">Buenos Aires 1158</p></a>

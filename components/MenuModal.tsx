@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Dialog from '@mui/material/Dialog';
+import RedLayout from './Commons/RedLayout';
 
 type modalProps = {
     open: boolean,
@@ -29,7 +30,7 @@ const ModalMenu = (
                   },
             }}
         >
-            <div className={''}>
+            <div className={'overflow-hidden'}>
                 <Image 
                     height={20} 
                     width={20} 
@@ -39,6 +40,7 @@ const ModalMenu = (
                     onClick={closeModal}
                 />
                 {children}
+                <RedLayout text={'ESTO ES COPATOMADEEEEE'} />
             </div>
         </Dialog>
     )

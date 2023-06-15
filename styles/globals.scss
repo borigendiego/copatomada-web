@@ -1,5 +1,4 @@
 @import 'variables.scss';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,7 +97,7 @@ h1 {
 .menu-section {
     height: 550px;
     width: 250px;
-    border: solid 1px crimson;
+    border: solid 1px $main-red;
     transition: background-color 200ms ease-in-out;
     display: flex;
     justify-content: flex-start;
@@ -109,7 +108,7 @@ h1 {
     p {
         font-size: 64px;
         transform: rotate(-90deg);
-        color: crimson;
+        color: $main-red;
     }
 
     .menu-svg {
@@ -121,7 +120,7 @@ h1 {
 
 
     &:hover {
-        background-color: crimson;
+        background-color: $main-red;
         cursor: pointer;
 
         p {
@@ -140,7 +139,7 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     background-image: url('/assets/images/paper-bg.png');
 
@@ -152,6 +151,17 @@ h1 {
     p {
         color: #000;
     }
+}
+
+//Red
+
+.red {
+    position: absolute;
+    background-color: $main-red;
+    width: 100%;
+    height: 100px;
+    bottom: 15%;
+    transform: rotate(-6.36deg);
 }
 
 //footer
@@ -166,3 +176,16 @@ h1 {
     cursor: pointer;
     margin: 4px 0;
 }
+
+//Mobile
+
+@media (max-width: 600px) {
+    .image1 {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image2 {
+        background-size: contain;
+    }
+  }
