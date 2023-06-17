@@ -4,8 +4,42 @@
 @tailwind utilities;
 
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
 h1 {
+    font-family: $title;
     font-size: 48px;
+}
+
+p, a {
+    font-family: $montserrat-regular;
+}
+
+
+button {
+    background-color: $main-red;
+    border-radius: 50px;
+    padding: 0.5em 2em;
+    color: #fff;
+    border: solid 1px $main-red;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+        background-color: #FFF;
+        color: $main-red;
+    }
+}
+
+.empty-font {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
 }
 
 //Banner
@@ -24,16 +58,78 @@ h1 {
 
 }
 
+//Scroll text
+
+.scrolltext-container {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+}
+
+.scroll div {
+    display: flex;
+    gap: 2em;
+}
+
+.scroll p {
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 0;
+}
+
+
+.rightToLeft {
+    animation: rightToLeft 10s infinite linear;
+}
+
+@keyframes rightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.leftToRight {
+    animation: leftToRight 10s infinite linear;
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
 //Conocenos Menu
 
+.conocenos {
+    h1 {
+        font-size: 68px;        
+    }
+}
 
 .conocenos-button {
     cursor: pointer;
     display: flex;
     padding: 20px;
+    margin-top: 2em;
+    justify-content: center;
 
     p {
         padding-right: 5px;
+        font-weight: bold;
+        font-size: 18px;
     }
 
     &:hover {
@@ -71,6 +167,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .menu-open {
@@ -95,20 +192,20 @@ h1 {
 }
 
 .menu-section {
-    height: 550px;
+    height: 525px;
     width: 250px;
     border: solid 1px $main-red;
     transition: background-color 200ms ease-in-out;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     position: relative;
     margin: 25px 0;
     
-    p {
-        font-size: 64px;
+    h1 {
+        font-size: 48px;
         transform: rotate(-90deg);
         color: $main-red;
+        position: relative;
+        top: 60%;
+        left: 25%;
     }
 
     .menu-svg {
@@ -123,7 +220,7 @@ h1 {
         background-color: $main-red;
         cursor: pointer;
 
-        p {
+        h1 {
             color: #000;
         }
 
@@ -162,6 +259,44 @@ h1 {
     height: 100px;
     bottom: 15%;
     transform: rotate(-6.36deg);
+    display: flex;
+    align-items: center;
+
+    h1 {
+        color: white;
+    }
+}
+
+//Redes
+
+.redes {
+    height: 100vh;
+    background-image: url('/assets/images/seguinos-bg.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    opacity: .4;
+    z-index: 2;
+}
+
+.red-circle {
+    border-radius: 100%;
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    background-color: #B40B35;
+    opacity: .75;
+    z-index: 5;
+    left: 45%;
+    top: 25%;
 }
 
 //footer

@@ -1,5 +1,6 @@
 import BaseComp from "./Commons/BaseComp"
 import Image from "next/image"
+import RedLayout from "./Commons/RedLayout"
 
 const MENU_DATA = [
     {
@@ -12,6 +13,7 @@ const MENU_DATA = [
                         text='Bienvenido a nuestro sector de compras, ¿Estás interesado en ofrecernos tu productos? Contactanos!'
                         button='QUIERO OFRECER MIS PRODUCTOS'
                     />
+                    <RedLayout text={['copa', 'tomada -', 'mercado', 'de bebeidas']}/>
                 </div>
     },
     {
@@ -46,6 +48,7 @@ const MENU_DATA = [
                         text='Nosotros te llevamos lo que quieras a tu casa. Agregá todo lo que querés al carrito y esperá la confirmación por WhatsApp'
                         button='HACER PEDIDO'
                     />
+                    <RedLayout text={['nuestros productos', 'sin moverte', 'de tu', 'casa']}/>
                 </div>
     },
     {
@@ -58,6 +61,7 @@ const MENU_DATA = [
                         text='Desde Copa Tomada nos sumamos al cuidado del medio ambiente. 
                         Somos punto de recepción y venta de bolsas mágicas de Cyclear,  formando parte del ciclo de reciclaje consciente de residuos para transformarlos en recursos y así disminuír nuestra huella de carbono, y vos... ¿Te copas?'
                     />
+                    <RedLayout text={['copa sustentable -', 'punto de', 'recepción', 'cyclear']}/>
                 </div>
     },
 ]

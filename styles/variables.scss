@@ -1,2 +1,35 @@
 //Colors
 $main-red: #DB0031;
+
+//Fonts
+$montserrat-regular: 'Montserrat-Regular';
+$title: 'Syncopate';
+
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/Montserrat-Medium.ttf');
+  }
+
+@font-face {
+  font-family: 'Syncopate';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/Syncopate-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Syncopate-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Syncopate-Regular.ttf');
+  }

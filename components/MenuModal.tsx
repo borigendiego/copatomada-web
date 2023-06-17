@@ -40,7 +40,6 @@ const ModalMenu = (
                     onClick={closeModal}
                 />
                 {children}
-                <RedLayout text={'ESTO ES COPATOMADEEEEE'} />
             </div>
         </Dialog>
     )

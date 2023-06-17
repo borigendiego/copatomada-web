@@ -17,8 +17,8 @@ const Menu = ({menu, closeMenu}:MenuTypes) => {
     return(
         <div>
             <div className={`${ menu ? 'menu menu-open' : 'menu'}`}>
-                <div className="flex justify-around w-full">
-                    <h1>ESTO ES COPA TOMADA</h1>
+                <div className="flex justify-between max-w-[1000px] w-full md:pt-8">
+                    <h1 className='empty-font'>ESTO ES COPA TOMADA</h1>
                     <Image height={20} width={20} alt="close" src={'/assets/images/+.svg'} className="close-svg cursor-pointer" onClick={closeMenu}/>
                 </div>
                 <div className="md:grid md:grid-cols-4">
@@ -29,7 +29,7 @@ const Menu = ({menu, closeMenu}:MenuTypes) => {
                             setOpenModal(true)}}
                     >
                         <Image height={20} width={20} alt="close" src={'/assets/images/+.svg'} className="menu-svg" />
-                        <p>Nosotros</p>
+                        <h1>Nosotros</h1>
                     </div>
                     <div 
                         className="menu-section"
@@ -38,7 +38,7 @@ const Menu = ({menu, closeMenu}:MenuTypes) => {
                             setOpenModal(true)}}
                     >
                         <Image height={20} width={20} alt="close" src={'/assets/images/+.svg'} className="menu-svg" />
-                        <p>Locales</p>
+                        <h1>Locales</h1>
                     </div>
                     <div 
                         className="menu-section"
@@ -47,7 +47,7 @@ const Menu = ({menu, closeMenu}:MenuTypes) => {
                             setOpenModal(true)}}
                     >
                         <Image height={20} width={20} alt="close" src={'/assets/images/+.svg'} className="menu-svg" />
-                        <p>Delivery</p>
+                        <h1>Delivery</h1>
                     </div>
                     <div 
                         className="menu-section"
@@ -56,7 +56,7 @@ const Menu = ({menu, closeMenu}:MenuTypes) => {
                             setOpenModal(true)}}
                     >
                         <Image height={20} width={20} alt="close" src={'/assets/images/+.svg'} className="menu-svg" />
-                        <p>Copa sustentable</p>
+                        <h1>Copa sustentable</h1>
                     </div>
                 </div>
             </div>
