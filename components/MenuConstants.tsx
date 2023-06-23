@@ -1,19 +1,14 @@
 import BaseComp from "./Commons/BaseComp"
 import Image from "next/image"
 import RedLayout from "./Commons/RedLayout"
+import Nosotros from "./Nosotros"
 
 const MENU_DATA = [
     {
         id: 1,
         section: 'Provedores',
         content: <div>
-                    <BaseComp 
-                        image='/assets/images/provedores.png'
-                        title='HOLA!' 
-                        text='Bienvenido a nuestro sector de compras, ¿Estás interesado en ofrecernos tu productos? Contactanos!'
-                        button='QUIERO OFRECER MIS PRODUCTOS'
-                    />
-                    <RedLayout text={['copa', 'tomada -', 'mercado', 'de bebeidas']}/>
+                    <Nosotros />
                 </div>
     },
     {

@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import MobileMenu from './mobile-menu';
+
 
 //Constants
 const NAV_DATA = [
@@ -28,7 +30,7 @@ const NAV_DATA = [
 const Header = () => {
   return (
     <div>
-      <div className='flex md:justify-around bg-white md:pt-6 md:pb-4'>
+      <div className='hidden md:flex md:justify-around bg-white md:pt-6 md:pb-4'>
         <a href={'/'}>
             <Image 
                 src={'/assets/logoheader.png'}
@@ -49,6 +51,16 @@ const Header = () => {
             }
         </div>
       </div>
+      <div className='md:hidden flex justify-between py-1 items-center fixed w-full bg-white shadow-md z-50'>
+                <Image 
+                    src={'/assets/logoheader.png'}
+                    width={50}
+                    height={100}
+                    alt={'Logo de Copa Tomada'}
+                    className={''}
+                />
+                <MobileMenu menuItems={NAV_DATA} />
+        </div>
     </div>
   )
 }

@@ -17,6 +17,14 @@ const Banner = () => {
 
   return (
     <div className={`h-screen transition-all duration-500 ease-in-out opacity-30 ${selectedBanner ? 'image1' : 'image2' }`}>
+      {
+        selectedBanner ?
+        <div className='banner-title'>
+          <h1>siempre es buen momento</h1>
+          <h1 className='sub-title'>para festejar</h1>
+        </div>
+        : <div></div>
+      }
     </div>
   )
 }

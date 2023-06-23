@@ -18,7 +18,7 @@ h1 {
     font-size: 48px;
 }
 
-p, a {
+p, a, li {
     font-family: $montserrat-regular;
 }
 
@@ -43,6 +43,18 @@ button {
 }
 
 //Banner
+
+.banner-title {
+    position: relative;
+    top: 60%;
+
+    h1 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 64px;
+    }
+
+}
 
 .image1 {
     background-image: url('/assets/images/banner-bg.jpg');
@@ -149,7 +161,7 @@ button {
     transform: rotate(45deg);
     cursor: pointer;
     position: absolute;
-    top: 20px;
+    top: 40px;
     right: 10%;
 }
 
@@ -192,7 +204,7 @@ button {
 }
 
 .menu-section {
-    height: 525px;
+    height: 500px;
     width: 250px;
     border: solid 1px $main-red;
     transition: background-color 200ms ease-in-out;
@@ -200,12 +212,17 @@ button {
     margin: 25px 0;
     
     h1 {
-        font-size: 48px;
+        font-size: 42px;
         transform: rotate(-90deg);
         color: $main-red;
         position: relative;
         top: 60%;
         left: 25%;
+        line-height: normal;
+    }
+
+    .sustentable {
+        top: 56.5%;
     }
 
     .menu-svg {
@@ -229,6 +246,40 @@ button {
         }
     }
 }
+
+.team-div {
+    opacity: .8;
+    transition: all 300ms ease-in-out;
+    width: fit-content;
+    position: absolute;
+    min-width: 300px;
+
+    .team {
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .team-s {
+        position: absolute;
+    }
+    
+    .team-h1 {
+        position: relative;
+        z-index: 3;
+        -webkit-text-stroke: 2px #FFF;
+        color: transparent;
+    }
+
+    &:hover {
+        opacity: 1;
+        
+        .team-h1 {
+            color: #FFF;
+        }
+    }
+}
+
+
 
 //Componente base
 
@@ -302,8 +353,9 @@ button {
 //footer
 
 .footer-image {
-    background-image: url('/assets/images/paper-bg-rounded.png');
-    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 12%;
 }
 
 .footer-a:hover {
@@ -312,9 +364,28 @@ button {
     margin: 4px 0;
 }
 
+.footer-list {
+    color: #000;
+    
+    ul {
+        padding: 0 2em;
+    }
+}
+
+
 //Mobile
 
 @media (max-width: 600px) {
+
+    .banner-title {
+        top: 10%;
+
+        h1 {
+            font-size: 16px;
+            justify-content: center;
+        }
+    }
+
     .image1 {
         background-size: cover;
         background-position: center;
@@ -323,4 +394,34 @@ button {
     .image2 {
         background-size: contain;
     }
+
+    .menu-section {
+        width: 80px;
+        height: 300px;
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    .menu-title {
+     font-size: 32px;   
+    }
+
+    .footer-list {
+        ul {
+            padding: 1em 0;
+        }
+    }
+
+    .redes {
+        h1 {
+            font-size: 36px;
+        }
+    }
+
+    .red-circle {
+        left: 30%;
+    }
+    
   }
