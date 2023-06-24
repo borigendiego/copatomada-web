@@ -14,21 +14,21 @@ const MENU_DATA = [
     {
         id: 2,
         section: 'Locales',
-        content:       <div className='flex'>
+        content:       <div className='flex md:flex-row flex-col-reverse'>
                             <div className='md:w-[900px]'>
                                 <Image src={'/assets/images/locales.png'} width={750} height={400} alt='Image'/>
                             </div>
                             <div className='basecomp-r'>
-                                <div className='md:w-[600px] md:h-4/5'>
-                                    <div className="flex md:flex-col md:mb-8">
-                                        <p className="font-bold md:pb-2">Copa Buenos Aires</p>
-                                        <a href="" className="flex"><img src="/assets/images/location-svg.svg" className="md:mr-2" alt="" /><p className="hover:underline">Buenos Aires 1158</p></a>
-                                        <a href="tel:+54 9 3512 60-3614" className="flex"><img src="/assets/images/whatsapp-svg.svg" className="md:mr-2" alt="" /><p className="hover:underline">+54 9 3512 60-3614</p></a>
+                                <div className='md:w-[600px] md:h-4/5 my-12 md:my-0'>
+                                    <div className="flex flex-col md:mb-8 mb-5">
+                                        <p className="font-bold pb-2">Copa Buenos Aires</p>
+                                        <a href="" className="flex py-2"><img src="/assets/images/location-svg.svg" className="mr-2" alt="" /><p className="hover:underline">Buenos Aires 1158</p></a>
+                                        <a href="tel:+54 9 3512 60-3614" className="flex py-2"><img src="/assets/images/whatsapp-svg.svg" className="mr-2" alt="" /><p className="hover:underline">+54 9 3512 60-3614</p></a>
                                     </div>
-                                    <div className="flex md:flex-col">
-                                        <p className="font-bold md:pb-2">Copa Trejo</p>
-                                        <a href="" className="flex"><img src="/assets/images/location-svg.svg" className="md:mr-2" alt="" /><p className="hover:underline">Obispo Trejo 818</p></a>
-                                        <a href="tel:+54 9 3512 60-3614" className="flex"><img src="/assets/images/whatsapp-svg.svg" className="md:mr-2" alt="" /><p className="hover:underline">+54 9 3512 60-3614</p></a>
+                                    <div className="flex flex-col">
+                                        <p className="font-bold pb-2">Copa Trejo</p>
+                                        <a href="" className="flex py-2"><img src="/assets/images/location-svg.svg" className="mr-2" alt="" /><p className="hover:underline">Obispo Trejo 818</p></a>
+                                        <a href="tel:+54 9 3512 60-3614" className="flex py-2"><img src="/assets/images/whatsapp-svg.svg" className="mr-2" alt="" /><p className="hover:underline">+54 9 3512 60-3614</p></a>
                                     </div>
                                 </div>
                             </div>

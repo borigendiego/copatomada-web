@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import ScrollingText from './Commons/ScrollingText';
+import Image from 'next/image';
 
 const Banner = () => {
 
@@ -23,7 +23,10 @@ const Banner = () => {
           <h1>siempre es buen momento</h1>
           <h1 className='sub-title'>para festejar</h1>
         </div>
-        : <div></div>
+        :  <div className='md:flex justify-center items-center absolute left-[51.3%] top-[82%] hidden'>
+            <Image src={'/assets/images/logo2.png'} alt='Copa tomada logo' width={90} height={20} className='absolute z-10'/>
+            <Image src={'/assets/images/paper-bg-rounded.png'} alt='Copa tomada logo' width={190} height={20} className=''/>
+          </div>
       }
     </div>
   )

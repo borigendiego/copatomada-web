@@ -38,7 +38,7 @@ button {
 }
 
 .empty-font {
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 1px white;
     color: transparent;
 }
 
@@ -47,6 +47,7 @@ button {
 .banner-title {
     position: relative;
     top: 60%;
+    color: #FFF;
 
     h1 {
         display: flex;
@@ -266,7 +267,7 @@ button {
     .team-h1 {
         position: relative;
         z-index: 3;
-        -webkit-text-stroke: 2px #FFF;
+        -webkit-text-stroke: 1px #FFF;
         color: transparent;
     }
 
@@ -314,7 +315,8 @@ button {
     align-items: center;
 
     h1 {
-        color: white;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
     }
 }
 
@@ -387,8 +389,8 @@ button {
     }
 
     .image1 {
-        background-size: cover;
-        background-position: center;
+        background-size: auto;
+        background-position: top;
     }
 
     .image2 {
@@ -401,11 +403,28 @@ button {
 
         h1 {
             font-size: 24px;
+            top: 75%;
+        }
+
+        .sustentable {
+            top: 71%;
+            left: 15%;
         }
     }
 
     .menu-title {
-     font-size: 32px;   
+     font-size: 24px;   
+    }
+
+    .red {
+        height: 70px;
+        bottom: 0;
+        
+        h1 {
+            font-size: 24px;
+            -webkit-text-stroke: 1px white;
+            color: transparent;
+        }
     }
 
     .footer-list {
@@ -422,6 +441,19 @@ button {
 
     .red-circle {
         left: 30%;
+    }
+
+    .basecomp-r {
+        h1 {
+            font-size: 24px;
+            line-height: normal;
+            font-weight: 700;
+            width: 80%;
+        }
+    }
+
+    .close-svg-modal {
+        top: 20px;
     }
     
   }

@@ -30,7 +30,7 @@ const ModalMenu = (
                   },
             }}
         >
-            <div className={'overflow-hidden'}>
+            <div className={'overflow-hidden h-full md:h-auto'}>
                 <Image 
                     height={20} 
                     width={20} 

@@ -51,7 +51,7 @@ const Header = () => {
             }
         </div>
       </div>
-      <div className='md:hidden flex justify-between py-1 items-center fixed w-full bg-white shadow-md z-50'>
+      <div className='md:hidden flex justify-around py-2 items-center fixed w-full bg-white shadow-md z-50'>
                 <Image 
                     src={'/assets/logoheader.png'}
                     width={50}

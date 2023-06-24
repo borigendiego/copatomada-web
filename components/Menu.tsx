@@ -17,8 +17,8 @@ const Menu = ({menu, closeMenu}:MenuTypes) => {
     return(
         <div>
             <div className={`${ menu ? 'menu menu-open' : 'menu'}`}>
-                <div className="flex justify-between md:max-w-[1000px] w-full md:pt-8">
-                    <h1 className='empty-font menu-title'>ESTO ES COPA TOMADA</h1>
+                <div className="flex md:justify-between justify-around md:max-w-[1000px] w-full md:pt-8">
+                    <h1 className='empty-font menu-title'>ESTO ES <br className="md:hidden"/> COPA TOMADA</h1>
                     <Image height={20} width={20} alt="close" src={'/assets/images/+.svg'} className="close-svg cursor-pointer" onClick={closeMenu}/>
                 </div>
                 <div className="md:grid md:grid-cols-4 flex">
