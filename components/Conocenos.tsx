@@ -18,10 +18,10 @@ const Conocenos = () => {
     <div className='h-screen relative overflow-hidden bg-white'>
       <Menu menu={menu} closeMenu={toggleMenu}/>
       <div className='conocenos'>
-        <ScrollingText text={['hola', 'somos', 'copa tomada', 'un']} black/>
-        <ScrollingText text={['grupo', 'de amigos', 'que ama tanto', 'las juntadas']} left black/>
-        <ScrollingText text={['como vos', 'es por', 'eso', 'que']} black/>
-        <ScrollingText text={['creamos este', 'mercado', 'de', 'bebidas']} left black/>
+        <ScrollingText text={['hola somos copa tomada', 'hola somos copa tomada', 'hola somos copa tomada', 'hola somos copa tomada']} black/>
+        <ScrollingText text={['un grupo de amigos que ama tanto', 'un grupo de amigos que ama tanto ', 'un grupo de amigos que ama tanto', 'un grupo de amigos que ama tanto']} left black/>
+        <ScrollingText text={['las juntadas como vos es por eso que', 'las juntadas como vos es por eso que', 'las juntadas como vos es por eso que', 'las juntadas como vos es por eso que']} black/>
+        <ScrollingText text={['creamos este mercado de bebidas', 'creamos este mercado de bebidas', 'creamos este mercado de bebidas', 'creamos este mercado de bebidas']} left black/>
       </div>
       <div className='conocenos-button' onClick={toggleMenu}>
         <p className='text-black'>Conocenos</p>

@@ -7,7 +7,7 @@ type modalProps = {
     open: boolean,
     children: any,
     closeModal: any,
-    selectedSection: string,
+    selectedSection?: string,
 }
 
 const ModalMenu = (
@@ -30,7 +30,7 @@ const ModalMenu = (
                   },
             }}
         >
-            <div className={'overflow-hidden h-full md:h-auto'}>
+            <div className={'overflow-hidden h-full md:min-h-[85vh] md:min-w-[1302px]'}>
                 <Image 
                     height={20} 
                     width={20} 

@@ -6,7 +6,7 @@ import Nosotros from "./Nosotros"
 const MENU_DATA = [
     {
         id: 1,
-        section: 'Provedores',
+        section: 'Nosotros',
         content: <div>
                     <Nosotros />
                 </div>
@@ -14,7 +14,7 @@ const MENU_DATA = [
     {
         id: 2,
         section: 'Locales',
-        content:       <div className='flex md:flex-row flex-col-reverse'>
+        content:       <div className='flex md:flex-row flex-col-reverse md:min-w-[1302px] md:min-h-[85vh]' id="locales">
                             <div className='md:w-[900px]'>
                                 <Image src={'/assets/images/locales.png'} width={750} height={400} alt='Image'/>
                             </div>
@@ -42,21 +42,32 @@ const MENU_DATA = [
                         image='/assets/images/delivery.png'
                         text='Nosotros te llevamos lo que quieras a tu casa. Agregá todo lo que querés al carrito y esperá la confirmación por WhatsApp'
                         button='HACER PEDIDO'
+                        linkTo="https://linktr.ee/CopaTomada"
                     />
-                    <RedLayout text={['nuestros productos', 'sin moverte', 'de tu', 'casa']}/>
+                    <RedLayout text={['nuestros productos sin moverte de tu casa', 'nuestros productos sin moverte de tu casa', 'nuestros productos sin moverte de tu casa', 'nuestros productos sin moverte de tu casa']}/>
                 </div>
     },
     {
         id: 4,
         section: 'Cyclear',
         content: <div>
-                    <BaseComp 
-                        image='/assets/images/cyclear.png'
-                        title='SOMOS SUSTENTABLES' 
-                        text='Desde Copa Tomada nos sumamos al cuidado del medio ambiente. 
-                        Somos punto de recepción y venta de bolsas mágicas de Cyclear,  formando parte del ciclo de reciclaje consciente de residuos para transformarlos en recursos y así disminuír nuestra huella de carbono, y vos... ¿Te copas?'
-                    />
-                    <RedLayout text={['copa sustentable -', 'punto de', 'recepción', 'cyclear']}/>
+                    <div className='flex md:flex-row flex-col-reverse md:min-w-[1302px] md:min-h-[85vh]' id="cyclear">
+                            <div className='md:min-w-[474px] md:min-h-[85vh]'>
+                                <Image src={'/assets/images/cyclear.png'} width={870} height={400} alt='Image'/>
+                            </div>
+                            <div className='basecomp-r'>
+                                <div className='md:w-[700px] md:h-[85%] my-12 md:my-0 md:block flex flex-col items-center'>
+                                    <h1 className='my-2 text-4xl'>SOMOS SUSTENTABLES</h1>
+                                    <p className='my-2 md:w-3/4 11/12 px-6 md:px-0'>
+                                        Desde Copa Tomada nos sumamos al cuidado del medio ambiente. 
+                                        Somos punto de recepción y venta de bolsas mágicas de Cyclear,  
+                                        formando parte del ciclo de reciclaje consciente de residuos para 
+                                        transformarlos en recursos y así disminuír nuestra huella de carbono, y vos... ¿Te copas?
+                                    </p>
+                                </div>
+                        </div>
+                        </div>
+                    <RedLayout text={['copa sustentable - punto de recepción cyclear', 'copa sustentable - punto de recepción cyclear', 'copa sustentable - punto de recepción cyclear', 'copa sustentable - punto de recepción cyclear']}/>
                 </div>
     },
 ]

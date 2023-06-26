@@ -3,7 +3,7 @@ import React from 'react'
 
 const Redes = () => {
   return (
-    <div className='redes'>
+    <div className='redes' id='redes'>
       <div className='overlay'/>
       <div className='red-circle'/>
       <div className='text-black relative z-10 opacity-80 md:left-[10%] left-4 md:top-[40%] top-10 leading-tight'>
@@ -21,7 +21,7 @@ const Redes = () => {
         height={200}
         className='absolute z-10 md:w-[325px] w-56 md:left-[54.7%] left-[38%] md:bottom-[5%] bottom-[20%]'
       />
-      <a href="https://www.instagram.com/copatomada/" target='_blank' rel='noreferrer'>
+      <a href="https://www.instagram.com/copatomada/" target='_blank' rel='noreferrer' className='redes-a'>
         <Image
           src={'/assets/images/instagram-cel.png'} 
           alt='Instagram picture' 
@@ -41,7 +41,7 @@ const Redes = () => {
           alt='Instagram picture' 
           width={50} 
           height={50}
-          className='absolute z-40 md:w-[50px] md:left-[65.3%] left-[63%] md:bottom-[44.8%] bottom-[43%]'
+          className='absolute z-40 md:w-[50px] md:left-[65.3%] left-[63%] md:bottom-[44.8%] bottom-[43%] duration-300 ease-in-out'
         /> 
       </a>
     </div>
