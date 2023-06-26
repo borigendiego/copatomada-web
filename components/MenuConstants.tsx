@@ -1,14 +1,19 @@
 import BaseComp from "./Commons/BaseComp"
 import Image from "next/image"
 import RedLayout from "./Commons/RedLayout"
-import Nosotros from "./Nosotros"
 
 const MENU_DATA = [
     {
         id: 1,
         section: 'Nosotros',
-        content: <div>
-                    <Nosotros />
+        content: <div className="nosotros flex md:flex-row flex-col-reverse">
+                    <div className="md:min-w-[474px]">
+                        <Image src={'/assets/images/nosotros.png'} alt="Foto del equipo" width={570} height={700} />
+                    </div>
+                    <div className="flex flex-col justify-center md:w-[500px] md:h-[500px] text-white md:pl-8">
+                        <h1><span className="empty-font pr-2">SOMOS</span>AMIGOS</h1>
+                        <p><span className="font-bold">Somos un Grupo de amigos</span> que en 2017 decidió emprender, hoy contamos con 2 locales Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    </div>
                 </div>
     },
     {

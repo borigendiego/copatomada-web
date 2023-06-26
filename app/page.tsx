@@ -5,7 +5,6 @@ import WhatsApp from '@/components/Commons/WhatsApp'
 import Conocenos from '@/components/Conocenos'
 import Footer from '@/components/Footer'
 import Redes from '@/components/Redes'
-import Nosotros from '@/components/Nosotros'
 
 export default function Home() {
   return (

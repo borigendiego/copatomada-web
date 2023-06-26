@@ -42,7 +42,8 @@ const Redes = () => {
           width={50} 
           height={50}
           className='absolute z-40 md:w-[50px] md:left-[65.3%] left-[63%] md:bottom-[44.8%] bottom-[43%] duration-300 ease-in-out'
-        /> 
+        />
+        <div className='telefono-overlay hidden md:block' />
       </a>
     </div>
   )

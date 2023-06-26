@@ -3,9 +3,9 @@ import ScrollingText from './ScrollingText'
 
 
 
-const RedLayout = ({text}:any) => {
+const RedLayout = ({text, positionLow}:any) => {
   return (
-    <div className='red'>
+    <div className={`${positionLow ? 'positionLow red' : 'red'} `}>
         {
           text ?
           <ScrollingText text={text} empty={true}/>
