@@ -27,14 +27,14 @@ const Redes = () => {
           alt='Instagram picture' 
           width={215} 
           height={200}
-          className='absolute z-30 md:w-[215px] w-[146px] md:left-[59.3%] left-[50%] md:bottom-[15.5%] bottom-[26.3%]'
+          className='absolute z-30 md:w-[214px] w-[146px] md:left-[59.3%] left-[49.2%] md:bottom-[15.5%] bottom-[26.3%]'
         />
         <Image
           src={'/assets/images/celular-b.png'} 
           alt='Instagram picture' 
           width={220} 
           height={200}
-          className='absolute z-20 md:w-[220px] w-[148px] md:left-[59.1%] left-[50.1%] md:bottom-[14%] bottom-[26%]'
+          className='absolute z-20 md:w-[220px] w-[148px] md:left-[59.1%] left-[48.8%] md:bottom-[14%] bottom-[25.3%]'
         />
         <Image
           src={'/assets/images/celular-play.png'} 

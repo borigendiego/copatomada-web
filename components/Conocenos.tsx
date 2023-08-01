@@ -15,7 +15,7 @@ const Conocenos = () => {
     }
 
   return (
-    <div className='h-screen relative overflow-hidden bg-white'>
+    <div className='h-screen relative overflow-hidden bg-white' id={'conocenos'}>
       <Menu menu={menu} closeMenu={toggleMenu}/>
       <div className='conocenos'>
         <ScrollingText text={['hola somos copa tomada', 'hola somos copa tomada', 'hola somos copa tomada', 'hola somos copa tomada']} black/>

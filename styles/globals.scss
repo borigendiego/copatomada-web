@@ -269,10 +269,6 @@ button {
     background-color: #2c2527f3;
     overflow: hidden;
 
-    .red {
-        bottom: 2%;
-        overflow: hidden;
-    }
 }
 
 .team-div {
@@ -425,6 +421,8 @@ button {
     
     ul {
         padding: 0 2em;
+        display: flex;
+        flex-direction: column;
     }
 }
 

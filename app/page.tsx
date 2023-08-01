@@ -15,7 +15,7 @@ export default function Home() {
       <Conocenos />
       <Redes />
       <Footer />
-      <p className='text-center py-4 bg-white text-black'>Created by <span className='font-semibold'>HippoSoft</span> | All Right Reserved</p>
+      <p className='text-center py-4 bg-white text-black'><a href='https://www.thehipposoft.com/' rel='noreferrer' target='_blank'>Created by <span className='font-semibold'>HippoSoft</span> | All Right Reserved</a></p>
     </main>
   )
 }

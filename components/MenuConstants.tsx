@@ -14,6 +14,7 @@ const MENU_DATA = [
                         <h1 className="text-[32px] flex flex-col md:flex-row pl-6 md:pl-0 pt-6 md:pt-0"><span className="empty-font md:pr-2">SOMOS</span>AMIGOS</h1>
                         <p className="px-6 md:px-0 my-4"><span className="font-bold ">Somos un Grupo de amigos </span>con el sueño de ser los Líderes en atención al cliente brindando una constante innovación de experiencia de compra con el objetivo de transimitir nuestros valores de trabajo. transparencia y honestidad, no solo para nuestros clientes sino también para nuestro equipo y la sociedad</p>
                     </div>
+                    <RedLayout />
                 </div>
     },
     {
@@ -27,12 +28,12 @@ const MENU_DATA = [
                                 <div className='md:w-[600px] md:h-4/5 my-12 md:my-0'>
                                     <div className="flex flex-col md:mb-8 mb-5">
                                         <p className="font-bold pb-2">Copa Buenos Aires</p>
-                                        <a href="" className="flex py-2"><img src="/assets/images/location-svg.svg" className="mr-2" alt="" /><p className="hover:underline">Buenos Aires 1158</p></a>
+                                        <a href="https://goo.gl/maps/HY6C6kRH3kcTAypX8" target="_blank" rel="noreferrer" className="flex py-2"><img src="/assets/images/location-svg.svg" className="mr-2" alt="" /><p className="hover:underline">Buenos Aires 1158</p></a>
                                         <a href="tel:+54 9 3512 60-3614" className="flex py-2"><img src="/assets/images/whatsapp-svg.svg" className="mr-2" alt="" /><p className="hover:underline">+54 9 3512 60-3614</p></a>
                                     </div>
                                     <div className="flex flex-col">
                                         <p className="font-bold pb-2">Copa Trejo</p>
-                                        <a href="" className="flex py-2"><img src="/assets/images/location-svg.svg" className="mr-2" alt="" /><p className="hover:underline">Obispo Trejo 818</p></a>
+                                        <a href="https://goo.gl/maps/65A3w6bDLyjgLFxe6" target="_blank" rel="noreferrer" className="flex py-2"><img src="/assets/images/location-svg.svg" className="mr-2" alt="" /><p className="hover:underline">Obispo Trejo 818</p></a>
                                         <a href="tel:+54 9 3512 60-3614" className="flex py-2"><img src="/assets/images/whatsapp-svg.svg" className="mr-2" alt="" /><p className="hover:underline">+54 9 3512 60-3614</p></a>
                                     </div>
                                 </div>

@@ -12,12 +12,12 @@ const NAV_DATA = [
     {
         id: 0,
         label: 'Nosotros',
-        linkTo: '#nosotros',
+        linkTo: '#conocenos',
     },
     {
         id: 1,
         label: 'Locales',
-        linkTo: '#locales',
+        linkTo: '#conocenos',
     },
     {
         id: 2,
