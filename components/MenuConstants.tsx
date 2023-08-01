@@ -10,9 +10,9 @@ const MENU_DATA = [
                     <div className="md:min-w-[474px]">
                         <Image src={'/assets/images/nosotros.png'} alt="Foto del equipo" width={570} height={700} />
                     </div>
-                    <div className="flex flex-col justify-center md:w-[500px] md:h-[500px] text-white md:pl-8">
-                        <h1><span className="empty-font pr-2">SOMOS</span>AMIGOS</h1>
-                        <p><span className="font-bold">Somos un Grupo de amigos</span> que en 2017 decidió emprender, hoy contamos con 2 locales Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <div className="flex flex-col md:flex-col justify-center md:w-[500px] md:h-[500px] text-white md:pl-8">
+                        <h1 className="text-[32px] flex flex-col md:flex-row pl-6 md:pl-0 pt-6 md:pt-0"><span className="empty-font md:pr-2">SOMOS</span>AMIGOS</h1>
+                        <p className="px-6 md:px-0 my-4"><span className="font-bold ">Somos un Grupo de amigos </span>con el sueño de ser los Líderes en atención al cliente brindando una constante innovación de experiencia de compra con el objetivo de transimitir nuestros valores de trabajo. transparencia y honestidad, no solo para nuestros clientes sino también para nuestro equipo y la sociedad</p>
                     </div>
                 </div>
     },
@@ -62,7 +62,7 @@ const MENU_DATA = [
                             </div>
                             <div className='basecomp-r'>
                                 <div className='md:w-[700px] md:h-[85%] my-12 md:my-0 md:block flex flex-col items-center'>
-                                    <h1 className='my-2 text-4xl'>SOMOS SUSTENTABLES</h1>
+                                    <h1 className='my-2 text-4xl md:w-full w-1/2'>SOMOS SUSTENTABLES</h1>
                                     <p className='my-2 md:w-3/4 11/12 px-6 md:px-0'>
                                         Desde Copa Tomada nos sumamos al cuidado del medio ambiente. 
                                         Somos punto de recepción y venta de bolsas mágicas de Cyclear,  
