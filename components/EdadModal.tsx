@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cookies from 'js-cookie';
 
 const EdadModal = () => {
-    const [modalIsOpen, setModalIsOpen] = useState(true);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
     const ageVerified = Cookies.get('ageVerified') === 'true';
 
     const handleCloseModal = () => {
@@ -13,8 +13,18 @@ const EdadModal = () => {
         Cookies.set('ageVerified', 'true', { expires: 30 });
     };
 
+    useEffect(() => {
+        if(Cookies.get('ageVerified') === 'true') {
+            document.body.style.overflow = 'auto';
+            setModalIsOpen(false);
+        } else {
+            setModalIsOpen(true);
+        }
+    }, []);
+
     return (
-        <div 
+        modalIsOpen
+        ? <div 
             className={`fixed inset-0 bg-white w-screen h-screen z-40 ${modalIsOpen || !ageVerified ? 'visible' : 'hidden'}`}
         >
             <div className={"flex w-full h-full justify-center items-center bg-cover bg-[url('/assets/images/mayor-bg.png')] after:content-[' '] after:w-full after:h-full after:absolute after:bg-[#ff000054]"}>
@@ -29,7 +39,7 @@ const EdadModal = () => {
                         </button>
                         <button
                             className={'secondary-button'}
-                            onClick={handleCloseModal}
+                            onClick={() => {}}
                         >
                             NO
                         </button>
@@ -37,6 +47,7 @@ const EdadModal = () => {
                 </div>
             </div>
         </div>
+        : null
     )
 };
 
