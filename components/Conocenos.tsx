@@ -1,9 +1,7 @@
 'use client'
 import React, {useState} from 'react'
 import Menu from './Menu';
-import BackDrop from './BackDrop';
 import Image from 'next/image';
-import RedLayout from './Commons/RedLayout';
 import ScrollingText from './Commons/ScrollingText';
 
 const Conocenos = () => {

@@ -27,7 +27,8 @@ const Banner = () => {
           autoPlay
           muted
           loop
-          id={'video'} 
+          id={'video'}
+          className={'w-full'}
         />  
     </div>
       <div className={`md:hidden block h-screen transition-all duration-500 ease-in-out opacity-30 ${selectedBanner ? 'image2' : 'image1' }`}>

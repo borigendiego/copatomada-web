@@ -13,6 +13,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 h1 {
     font-family: $title;
     font-size: 48px;
@@ -37,19 +41,23 @@ button {
     }
 }
 
+.secondary-button {
+    background-color: white;
+    color: black;
+}
+
 .empty-font {
     -webkit-text-stroke: 1px white;
     color: transparent;
 }
 
 //Banner
-
+ 
 .banner-title {
     position: absolute;
     top: 60%;
     z-index: 10;
-    -webkit-text-stroke: 1px white;
-    color: transparent;
+    color: white;
     
     h1 {
         display: flex;
