@@ -1,6 +1,8 @@
 'use client'
-import React, { useState } from 'react'
-import Image from 'next/image'
+import React, { useState, useEffect } from 'react';
+import { useTheme } from "next-themes";
+
+import Image from 'next/image';
 import MobileMenu from './mobile-menu';
 import BaseComp from './Commons/BaseComp';
 import RedLayout from './Commons/RedLayout';
@@ -57,13 +59,23 @@ const NAV_DATA = [
 ]
 
 const Header = () => {
-
     const [openModal, setOpenModal] = useState<boolean>(false);
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
+    const [mounted, setMounted] = useState(false);
+    const { theme, setTheme } = useTheme();
+
+    useEffect(() => {
+        setMounted(true);
+      }, []);
+    
+    
+      if (!mounted) {
+        return null;
+      }
 
   return (
     <div>
-      <div className='hidden md:flex md:justify-around bg-white md:pt-6 md:pb-4'>
+      <div className='hidden md:flex md:justify-around bg-white md:pt-6 md:pb-4 dark:bg-black'>
         <a href={'/'}>
             <Image 
                 src={'/assets/logoheader.png'}
@@ -79,7 +91,7 @@ const Header = () => {
                         item.modalContent ?
                         <a 
                             key={index}
-                            className={'md:mx-6 text-black opacity-50 font-semibold duration-300 hover:opacity-100 cursor-pointer'}
+                            className={'md:mx-6 text-black dark:text-white opacity-50 font-semibold duration-300 hover:opacity-100 cursor-pointer'}
                             onClick={() => {
                                 setOpenModal(true)
                                 setSelectedModalDataId(item.id)
@@ -90,12 +102,18 @@ const Header = () => {
                         <a 
                             key={index}
                             href={item.linkTo}
-                            className={'md:mx-6 text-black opacity-50 font-semibold duration-300 hover:opacity-100'}>   
+                            className={'md:mx-6 text-black dark:text-white opacity-50 font-semibold duration-300 hover:opacity-100'}>   
                             {item.label}
                         </a>
                 )
             }
         </div>
+        <button
+            className={`w-fit absolute right-5 top-2 p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-slate-200 dark:bg-[#212933]`}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        >
+            {theme === "light" ? "Dark" : "Light"}
+        </button>
       </div>
       <div className='md:hidden flex justify-around py-2 items-center fixed w-full bg-white shadow-md z-50'>
                 <Image 

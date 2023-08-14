@@ -39,7 +39,9 @@ const EdadModal = () => {
                         </button>
                         <button
                             className={'secondary-button'}
-                            onClick={() => {}}
+                            onClick={() => {
+                                location.href = 'https://www.google.com/'; 
+                            }}
                         >
                             NO
                         </button>

@@ -7,11 +7,16 @@ type ScrollTextTypes = {
     empty?: boolean,
 }
 
-const ScrollingText = ({text, left, black, empty}:ScrollTextTypes) => {
+const ScrollingText = ({
+  text, 
+  left, 
+  black, 
+  empty
+}:ScrollTextTypes) => {
   return (
     <div className='scrolltext-container'>
       <div className='scroll'>
-        <div className={`${left ? 'leftToRight' : 'rightToLeft'} ${black ? 'text-black' : ''} ${empty ? 'empty-font' : ''}`}>
+        <div className={`dark:text-white ${left ? 'leftToRight' : 'rightToLeft'} ${black ? 'text-black' : ''} ${empty ? 'empty-font' : ''}`}>
             <h1>{text[0]}</h1>
             <h1>{text[1]}</h1>
             <h1>{text[2]}</h1>

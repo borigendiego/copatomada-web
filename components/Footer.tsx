@@ -1,36 +1,33 @@
-'use client'
+'use client';
 import Image from 'next/image'
 import React, {useState} from 'react'
 import ModalMenu from './MenuModal'
 import RedLayout from './Commons/RedLayout';
 import BaseComp from './Commons/BaseComp';
 
-
 const Footer = () => {
-
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [openModal2, setOpenModal2] = useState<boolean>(false);
 
-
   return (
-    <div className='flex md:flex-row flex-col justify-around items-center bg-white p-8 relative md:mb-8'>
+    <div className='flex md:flex-row flex-col justify-around items-center bg-white p-8 relative md:mb-8 dark:bg-black'>
         <div className='flex justify-center items-center'>
             <Image src={'/assets/images/logo2.png'} alt='Copa tomada logo' width={80} height={20} className='absolute z-10'/>
             <Image src={'/assets/images/paper-bg-rounded.png'} alt='Copa tomada logo' width={180} height={20} className=''/>
         </div>
         <div className='flex md:flex-row flex-col footer-list'>
-          <ul>
+          <ul className={'dark:text-white'}>
             <a className='font-bold' href='#conocenos'>Nosotros</a>
             <a href='#conocenos'>Locales</a>
             <a href='#conocenos'>Delivery</a>
             <a href='#conocenos'>Copa sustentable</a>
           </ul>
-          <ul className=''>
+          <ul className={'dark:text-white'}>
             <li className='font-bold cursor-pointer' onClick={() => setOpenModal(true)}>Venta Mayorista</li>
             <li className='font-bold md:pt-2 cursor-pointer' onClick={() => setOpenModal2(true)}>Proveedores</li>
             <a className='font-bold md:pt-2' href='#redes'>Redes Sociales</a>
           </ul>
-          <ul>
+          <ul className={'dark:text-white'}>
             <li className='font-bold'>Trabaja con nosotros</li>
           </ul>
         </div>
@@ -66,4 +63,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
