@@ -1,16 +1,20 @@
 'use client'
 import Image from "next/image";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ModalMenu from "./MenuModal";
-import { MENU_DATA } from './MenuConstants'
+import { 
+    MENU_DATA 
+} from './MenuConstants';
 
 type MenuTypes = {
     menu: any,
     closeMenu: any
 }
 
-const Menu = ({menu, closeMenu}:MenuTypes) => {
-
+const Menu = ({
+    menu, 
+    closeMenu
+}:MenuTypes) => {
     const [openModal, setOpenModal] = useState<boolean>(false);
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
 
@@ -60,7 +64,11 @@ const Menu = ({menu, closeMenu}:MenuTypes) => {
                     </div>
                 </div>
             </div>
-            <ModalMenu open={openModal} closeModal={() => setOpenModal(false)} selectedSection={MENU_DATA[selectedModalDataId].section}>
+            <ModalMenu 
+                open={openModal} 
+                closeModal={() => setOpenModal(false)} 
+                selectedSection={MENU_DATA[selectedModalDataId].section}
+            >
                 <div>
                     {MENU_DATA[selectedModalDataId].content}
                 </div>

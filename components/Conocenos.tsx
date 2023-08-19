@@ -1,5 +1,5 @@
-'use client'
-import React, {useState} from 'react'
+'use client';
+import React, { useState } from 'react';
 import Menu from './Menu';
 import Image from 'next/image';
 import ScrollingText from './Commons/ScrollingText';

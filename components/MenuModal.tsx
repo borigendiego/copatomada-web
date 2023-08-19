@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import Dialog from '@mui/material/Dialog';
-import RedLayout from './Commons/RedLayout';
 
 type modalProps = {
     open: boolean,
     children: any,
     closeModal: any,
     selectedSection?: string,
+    fullScreen?: boolean
 }
 
 const ModalMenu = (
@@ -15,6 +15,7 @@ const ModalMenu = (
         open,
         children,
         closeModal,
+        fullScreen = false,
     }:modalProps) => {
     const handleClose = () => {};
       
@@ -29,14 +30,15 @@ const ModalMenu = (
                     backgroundColor: 'transparent',
                   },
             }}
+            fullScreen={fullScreen}
         >
-            <div className={'overflow-hidden h-full md:min-h-[85vh] md:min-w-[1302px]'}>
+            <div className={`h-full flex justify-center items-center ${fullScreen ? 'md:min-h-[100vh]' : 'md:min-h-[85vh]'}  md:min-w-[1302px]`}>
                 <Image 
-                    height={20} 
-                    width={20} 
+                    height={30} 
+                    width={30} 
                     alt="close" 
                     src={'/assets/images/+.svg'} 
-                    className="close-svg-modal" 
+                    className={"close-svg-modal"}
                     onClick={closeModal}
                 />
                 {children}

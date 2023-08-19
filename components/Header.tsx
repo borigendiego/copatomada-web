@@ -1,13 +1,11 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { useTheme } from "next-themes";
-
 import Image from 'next/image';
 import MobileMenu from './mobile-menu';
 import BaseComp from './Commons/BaseComp';
 import RedLayout from './Commons/RedLayout';
 import ModalMenu from './MenuModal';
-
 
 //Constants
 const NAV_DATA = [
@@ -59,19 +57,18 @@ const NAV_DATA = [
 ]
 
 const Header = () => {
+    const { theme, setTheme } = useTheme();
     const [openModal, setOpenModal] = useState<boolean>(false);
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
     const [mounted, setMounted] = useState(false);
-    const { theme, setTheme } = useTheme();
 
     useEffect(() => {
         setMounted(true);
-      }, []);
+    }, []);
     
-    
-      if (!mounted) {
+    if (!mounted) {
         return null;
-      }
+    }
 
   return (
     <div>
@@ -81,7 +78,7 @@ const Header = () => {
                 src={'/assets/logoheader.png'}
                 width={80}
                 height={100}
-                alt={'Diversity at Employment logo'}
+                alt={'Logo Copa Tomada'}
                 className={'md:mr-6'}
             />
         </a>
@@ -125,8 +122,13 @@ const Header = () => {
                 />
                 <MobileMenu menuItems={NAV_DATA} />
         </div>
-        <ModalMenu open={openModal} closeModal={() => setOpenModal(false)}>
-            <div>
+        
+        <ModalMenu 
+            open={openModal} 
+            closeModal={() => setOpenModal(false)}
+            fullScreen
+        >
+            <div className={'w-full relative overflow-hidden'}>
                 {NAV_DATA[selectedModalDataId].modalContent}
             </div>
         </ModalMenu>

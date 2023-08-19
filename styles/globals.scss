@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body {
   padding: 0;
@@ -25,7 +24,6 @@ h1 {
 p, a, li {
     font-family: $montserrat-regular;
 }
-
 
 button {
     background-color: $main-red;
@@ -96,7 +94,6 @@ button {
 }
 
 //Scroll text
-
 .scrolltext-container {
     display: flex;
     align-items: center;
@@ -119,7 +116,6 @@ button {
     font-weight: bold;
     line-height: 0;
 }
-
 
 .rightToLeft {
     animation: rightToLeft 30s infinite linear;
@@ -147,9 +143,7 @@ button {
     }
 }
 
-
 //Conocenos Menu
-
 .conocenos {
     h1 {
         font-size: 68px;
@@ -186,8 +180,9 @@ button {
     transform: rotate(45deg);
     cursor: pointer;
     position: absolute;
-    top: 40px;
+    top: 6rem;
     right: 10%;
+    z-index: 10;
 }
 
 .menu {
@@ -309,9 +304,6 @@ button {
         }
     }
 }
-
-
-
 //Componente base
 
 .basecomp-r {
@@ -332,22 +324,17 @@ button {
     }
 }
 
-//Red
-
-
-
 .red {
     overflow: hidden;
     position: absolute;
     background-color: $main-red;
-    width: 100vw;
+    width: 102vw;
     height: 100px;
     bottom: 15%;
-    right: 2%;
+    right: -1%;
     transform: rotate(-6.36deg);
     display: flex;
     align-items: center;
-
 
     h1 {
         -webkit-text-stroke: 1px white;
@@ -357,7 +344,6 @@ button {
 }
 
 //Redes
-
 .redes {
     height: 100vh;
     background-image: url('/assets/images/seguinos-bg.png');
@@ -411,7 +397,6 @@ button {
 }
 
 //footer
-
 .footer-image {
     position: absolute;
     top: 0;
@@ -434,11 +419,8 @@ button {
     }
 }
 
-
 //Mobile
-
 @media (max-width: 600px) {
-
 
     .image1 {
         background-size: auto;
@@ -507,5 +489,4 @@ button {
     .close-svg-modal {
         top: 20px;
     }
-    
-  }
+}
