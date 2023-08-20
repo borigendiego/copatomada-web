@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 //Style
 import  styles from './mobileMenu.module.scss';
-import { useThemeContext } from "@/app/Context/theme";
+import { useThemeContext } from "../../app/Context/theme";
 
 type MenuItemsType = {
     linkTo: string,

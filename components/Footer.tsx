@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import ModalMenu from './MenuModal'
 import RedLayout from './Commons/RedLayout';
 import BaseComp from './Commons/BaseComp';
-import { useThemeContext } from "@/app/Context/theme";
+import { useThemeContext } from "../app/Context/theme";
 
 const Footer = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);

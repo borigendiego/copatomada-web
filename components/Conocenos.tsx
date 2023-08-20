@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import ScrollingText from './Commons/ScrollingText';
-import { useThemeContext } from "@/app/Context/theme";
+import { useThemeContext } from "../app/Context/theme";
 import { useTheme } from "next-themes";
 
 const Conocenos = () => {
