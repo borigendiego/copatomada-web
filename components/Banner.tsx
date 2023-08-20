@@ -17,7 +17,7 @@ const Banner = () => {
 
   return (
     <div>
-      <div className={`h-screen md:block hidden`}>
+      <div className={`h-screen md:block hidden relative`}>
         <div className='banner-title'>
           <h1>siempre es buen momento</h1>
           <h1 className='sub-title'>para festejar</h1>

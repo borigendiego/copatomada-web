@@ -4,10 +4,12 @@ import React, {useState} from 'react'
 import ModalMenu from './MenuModal'
 import RedLayout from './Commons/RedLayout';
 import BaseComp from './Commons/BaseComp';
+import { useThemeContext } from "@/app/Context/theme";
 
 const Footer = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [openModal2, setOpenModal2] = useState<boolean>(false);
+  const { openMenu, setOpenMenu}: any = useThemeContext();
 
   return (
     <div className='flex md:flex-row flex-col justify-around items-center bg-white p-8 relative md:mb-8 dark:bg-black'>
@@ -18,9 +20,24 @@ const Footer = () => {
         <div className='flex md:flex-row flex-col footer-list'>
           <ul className={'dark:text-white'}>
             <a className='font-bold' href='#conocenos'>Nosotros</a>
-            <a href='#conocenos'>Locales</a>
-            <a href='#conocenos'>Delivery</a>
-            <a href='#conocenos'>Copa sustentable</a>
+            <a 
+              href='#locales'
+              onClick={() => setOpenMenu(true) }
+            >
+              Locales
+            </a>
+            <a 
+              href='#delivery'
+              onClick={() => setOpenMenu(true) }
+            >
+              Delivery
+            </a>
+            <a 
+              href='#sustentable'
+              onClick={() => setOpenMenu(true) }
+            >
+              Copa sustentable
+            </a>
           </ul>
           <ul className={'dark:text-white'}>
             <li className='font-bold cursor-pointer' onClick={() => setOpenModal(true)}>Venta Mayorista</li>

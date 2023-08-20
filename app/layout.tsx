@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from "./theme-provider";
+import { ThemeContextProvider } from './Context/theme';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,9 @@ export default function RootLayout({
         className={`${inter.className} bg-slate-50 dark:bg-[#0d1117]`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main>{children}</main>
+          <ThemeContextProvider>
+            {children}
+          </ThemeContextProvider>
         </ThemeProvider>
       </body>
     </html>

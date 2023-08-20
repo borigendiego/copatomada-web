@@ -1,20 +1,18 @@
 'use client';
-import React, { useState } from 'react';
-import Menu from './Menu';
+import React from 'react';
 import Image from 'next/image';
 import ScrollingText from './Commons/ScrollingText';
+import { useThemeContext } from "@/app/Context/theme";
 
 const Conocenos = () => {
+  const { openMenu, setOpenMenu}: any = useThemeContext();
 
-    const [menu, setMenu] = useState(false);
-
-    const toggleMenu = () => {
-        setMenu((prevState) => !prevState)
-    }
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  }
 
   return (
     <div className='h-screen relative overflow-hidden bg-white dark:bg-black' id={'conocenos'}>
-      <Menu menu={menu} closeMenu={toggleMenu}/>
       <div className='conocenos dark:bg-black'>
         <ScrollingText text={['hola somos copa tomada', 'hola somos copa tomada', 'hola somos copa tomada', 'hola somos copa tomada']} black/>
         <ScrollingText text={['un grupo de amigos que ama tanto', 'un grupo de amigos que ama tanto ', 'un grupo de amigos que ama tanto', 'un grupo de amigos que ama tanto']} left black/>
