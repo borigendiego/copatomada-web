@@ -53,6 +53,21 @@ button {
     color: transparent;
 }
 
+.empty-font-black {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+}
+
+.full-font-black {
+    -webkit-text-stroke: 1px black;
+    color: black;
+}
+
+.full-font-white {
+    -webkit-text-stroke: 1px white;
+    color: white;
+}
+
 //Banner
  
 .banner-title {
@@ -274,7 +289,39 @@ button {
     background-image: url('/assets/images/nosotros-paper-bg.png');
     background-color: #2c2527f3;
     overflow: hidden;
+    min-height: 80vh;
+}
 
+/*Spinning words*/
+.words h1 {
+    animation: spin_words 7s infinite;
+    font-size: 32px;
+}
+
+@keyframes spin_words {
+    10% {
+        transform: translateY(-112%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-212%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-312%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
 }
 
 .team-div {

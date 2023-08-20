@@ -24,8 +24,8 @@ const Menu = () => {
             setTimeout(function(){
                 const parts = window.location.href.split("#");
                 const substringAfterHash = parts[1];
-                
-                if (substringAfterHash && sectionsIds[substringAfterHash]) {
+
+                if (substringAfterHash && (sectionsIds[substringAfterHash] === 0 || sectionsIds[substringAfterHash])) {
                     setSelectedModalDataId(sectionsIds[substringAfterHash]);
                     setOpenModal(true);
                 }
@@ -87,10 +87,13 @@ const Menu = () => {
             </div>
             <ModalMenu 
                 open={openModal} 
-                closeModal={() => setOpenModal(false)} 
+                closeModal={() => {
+                    setOpenModal(false);
+                    history.replaceState({}, document.title, window.location.pathname);
+                }} 
                 selectedSection={MENU_DATA[selectedModalDataId].section}
             >
-                <div>
+                <div className={'w-full'}>
                     {MENU_DATA[selectedModalDataId].content}
                 </div>
             </ModalMenu>

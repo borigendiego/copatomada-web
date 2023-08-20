@@ -114,7 +114,14 @@ const Header = () => {
                         width={80}
                         height={100}
                         alt={'Logo Copa Tomada'}
-                        className={'md:mr-6'}
+                        className={'md:mr-6 dark:hidden'}
+                    />
+                    <Image 
+                        src={'/assets/logo_blanco_copa.png'}
+                        width={80}
+                        height={100}
+                        alt={'Logo Copa Tomada'}
+                        className={'md:mr-6 dark:block hidden'}
                     />
                 </a>
                 <div className='flex items-center md:ml-12'>

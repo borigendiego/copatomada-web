@@ -2,11 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 //Style
 import  styles from './mobileMenu.module.scss';
-
+import { useThemeContext } from "@/app/Context/theme";
 
 type MenuItemsType = {
     linkTo: string,
     label: string,
+    openNosotrosModal?: boolean
 }
 
 type MobileMenuPropsType = {
@@ -14,6 +15,7 @@ type MobileMenuPropsType = {
 }
 
 const MobileMenu = ({menuItems}:MobileMenuPropsType) => {
+    const { openMenu, setOpenMenu}: any = useThemeContext();
 
     return (
         <div className={styles.menuToggle}>
@@ -30,7 +32,17 @@ const MobileMenu = ({menuItems}:MobileMenuPropsType) => {
                     className={'py-4'}
                 />
                 {
-                    menuItems.map((link, index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
+                    menuItems.map((link, index) => 
+                        <a 
+                            onClick={() => {
+                                if(link.openNosotrosModal) {
+                                    setOpenMenu(true);
+                                }
+                            }} 
+                            key={index} 
+                            href={link.linkTo}>
+                                <li>{link.label}</li>
+                        </a>)
                 }
             </ul>
         </div>
