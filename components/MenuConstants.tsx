@@ -61,7 +61,9 @@ const MENU_DATA = [
                 button='HACER PEDIDO'
                 linkTo="https://linktr.ee/CopaTomada"
             />
-            <RedLayout text={['nuestros productos sin moverte de tu casa', 'nuestros productos sin moverte de tu casa', 'nuestros productos sin moverte de tu casa', 'nuestros productos sin moverte de tu casa']}/>
+            <RedLayout text={
+                [0,1,2,3].map(() => <h1>nuestros productos sin moverte de tu casa</h1>)
+            }/>
         </div>
     },
     {
@@ -84,7 +86,9 @@ const MENU_DATA = [
                         </div>
                 </div>
                 </div>
-            <RedLayout text={['copa sustentable - punto de recepción cyclear', 'copa sustentable - punto de recepción cyclear', 'copa sustentable - punto de recepción cyclear', 'copa sustentable - punto de recepción cyclear']}/>
+            <RedLayout
+                text={[0,1,2,3].map(() => <h1>copa sustentable - punto de recepción cyclear</h1>)}
+            />
         </div>
     },
 ]

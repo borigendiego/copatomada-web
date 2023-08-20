@@ -62,7 +62,9 @@ const Footer = () => {
                     button='QUIERO OFRECER MIS PRODUCTOS'
                     linkTo='https://linktr.ee/CopaTomada'
                   />
-                <RedLayout text={['copa tomada - mercado de bebidas', 'copa tomada - mercado de bebidas', 'copa tomada - mercado de bebidas', 'copa tomada - mercado de bebidas']}/>
+                <RedLayout
+                  text={[0,1,2,3].map(() => <h1>copa tomada - mercado de bebidas</h1>)}
+                />
             </div>
         </ModalMenu>
         <ModalMenu open={openModal2} closeModal={() => setOpenModal2(false)}>
@@ -73,7 +75,9 @@ const Footer = () => {
                   button='CONOCE NUESTRO CATÁLOGO MAYORISTA'
                   linkTo='https://linktr.ee/CopaTomada'
               />
-              <RedLayout text={['venta mayorista venta mayorista', 'venta mayorista venta mayorista', 'venta mayorista venta mayorista', 'venta mayorista']}/>
+              <RedLayout
+                text={[0,1,2,3].map(() => <h1>venta mayorista venta mayorista</h1>)}
+              />
             </div>
         </ModalMenu>
     </div>
