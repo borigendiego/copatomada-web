@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import ScrollingText from './Commons/ScrollingText';
-import { useThemeContext } from "../app/Context/theme";
+import { useThemeContext } from "../app/context/theme";
 import { useTheme } from "next-themes";
 
 const Conocenos = () => {
@@ -12,8 +12,6 @@ const Conocenos = () => {
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
-
-  console.log(">>theme", theme)
 
   return (
     <div className='h-screen relative overflow-hidden bg-white dark:bg-black' id={'conocenos'}>
