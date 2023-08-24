@@ -6,7 +6,7 @@ import MobileMenu from './mobile-menu';
 import BaseComp from './Commons/BaseComp';
 import RedLayout from './Commons/RedLayout';
 import ModalMenu from './MenuModal';
-import { useThemeContext } from '../app/Context/theme';
+import { useThemeContext } from '../app/context/theme';
 
 //Constants
 const NAV_DATA = [

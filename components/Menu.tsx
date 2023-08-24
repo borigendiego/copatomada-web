@@ -5,7 +5,7 @@ import ModalMenu from "./MenuModal";
 import { 
     MENU_DATA 
 } from './MenuConstants';
-import { useThemeContext } from "../app/Context/theme";
+import { useThemeContext } from "../app/context/theme";
 
 const sectionsIds: any = {
     'nosotros': 0,
