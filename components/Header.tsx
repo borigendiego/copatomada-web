@@ -8,6 +8,17 @@ import RedLayout from './Commons/RedLayout';
 import ModalMenu from './MenuModal';
 import { useThemeContext } from '../app/context/theme';
 
+import {createClient, groq} from 'next-sanity'
+
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID // "pv8y60vp"
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET // "production"
+
+const client = createClient({
+  projectId,
+  dataset,
+  useCdn: true, // if you're using ISR or only static generation at build time then you can set this to `false` to guarantee no stale content
+})
+
 //Constants
 const NAV_DATA = [
     {
@@ -69,10 +80,18 @@ const Header = () => {
     const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
     const [mounted, setMounted] = useState(false);
     const { openMenu, setOpenMenu}: any = useThemeContext();
+    const [data, setData] = useState<any>();
 
     useEffect(() => {
         setMounted(true);
+
+        const loadData = async () => {
+            //setData(await client.fetch(groq`*[]`));
+            setData(await client.fetch(`*[_type == "pet"]`));
+        };
+        loadData();
     }, []);
+    console.log(">>data", data)
     
     if (!mounted) {
         return null;
