@@ -87,7 +87,7 @@ button {
 .banner-title-mb {
     position: absolute;
     left: 5%;
-    top: 85%;
+    top: 4%;
     z-index: 10;
     color: white;
     
@@ -113,6 +113,12 @@ button {
 }
 
 //Scroll text
+
+.conocenos {
+    span {
+        cursor: crosshair;
+    }
+}
 .scrolltext-container {
     display: flex;
     align-items: center;
@@ -137,7 +143,7 @@ button {
 }
 
 .rightToLeft {
-    animation: rightToLeft 30s infinite linear;
+    animation: rightToLeft 45s infinite linear;
 }
 
 @keyframes rightToLeft {
@@ -150,7 +156,7 @@ button {
 }
 
 .leftToRight {
-    animation: leftToRight 35s infinite linear;
+    animation: leftToRight 45s infinite linear;
 }
 
 @keyframes leftToRight {
@@ -169,25 +175,6 @@ button {
     }
 }
 
-.conocenos-button {
-    cursor: pointer;
-    display: flex;
-    padding: 20px;
-    padding-top: 2em;
-    justify-content: center;
-
-    p {
-        padding-right: 5px;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    &:hover {
-        p {
-            text-decoration: underline;
-        }
-    }
-}
 
 .close-svg {
     transform: rotate(45deg);
@@ -199,7 +186,7 @@ button {
     transform: rotate(45deg);
     cursor: pointer;
     position: absolute;
-    top: 6rem;
+    top: 3rem;
     right: 10%;
     z-index: 10;
 }
@@ -372,6 +359,10 @@ button {
     p {
         color: #000;
     }
+
+    a {
+        width: fit-content;
+    }
 }
 
 .red {
@@ -389,7 +380,8 @@ button {
     h1 {
         -webkit-text-stroke: 1px white;
         color: transparent;
-        padding-left: 0 2%;
+        font-size: 32px;
+        margin: 0 auto;
     }
 }
 
@@ -505,7 +497,11 @@ button {
         bottom: 0;
         
         h1 {
-            font-size: 24px;
+            width: 310px;
+            font-size: 15px;
+            padding-left: 10%;
+            text-align: center;
+            margin: 0 auto;
             -webkit-text-stroke: 1px white;
             color: transparent;
         }
@@ -532,7 +528,7 @@ button {
             font-size: 24px;
             line-height: normal;
             font-weight: 700;
-            width: 80%;
+            width: 100%;
         }
     }
 

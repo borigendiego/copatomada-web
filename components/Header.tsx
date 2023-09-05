@@ -46,8 +46,7 @@ const NAV_DATA = [
                     button='QUIERO OFRECER MIS PRODUCTOS'
                     linkTo='https://linktr.ee/CopaTomada'
                     />
-                    <RedLayout 
-                        text={[0,1,2,3].map(() => <h1>copa tomada - mercado de bebidas</h1>)}
+                    <RedLayout text={'copa tomada - mercado de bebidas'}
                     />
             </div>
     },
@@ -63,9 +62,7 @@ const NAV_DATA = [
                     button='CONOCE NUESTRO CATÁLOGO MAYORISTA'
                     linkTo='https://linktr.ee/CopaTomada'
                 />
-                <RedLayout 
-                    text={[0,1,2,3].map(() => <h1>enta mayorista venta mayorista</h1>)}
-                />
+                <RedLayout text={'copa tomada - mercado de bebidas'} />
             </div>
     },
     {

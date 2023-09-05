@@ -6,7 +6,7 @@ const RedLayout = ({text, positionLow}:any) => {
     <div className={`${positionLow ? 'positionLow red' : 'red'} `}>
         {
           text 
-          ? <ScrollingText text={text} />
+          ? <h1>{text}</h1>
           : <></>
         }
     </div>

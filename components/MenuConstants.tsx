@@ -61,9 +61,7 @@ const MENU_DATA = [
                 button='HACER PEDIDO'
                 linkTo="https://linktr.ee/CopaTomada"
             />
-            <RedLayout text={
-                [0,1,2,3].map(() => <h1>nuestros productos sin moverte de tu casa</h1>)
-            }/>
+            <RedLayout text={'nuestros productos sin moverte de tu casa'}/>
         </div>
     },
     {
@@ -76,7 +74,7 @@ const MENU_DATA = [
                     </div>
                     <div className='basecomp-r'>
                         <div className='md:w-[700px] md:h-[85%] my-12 md:my-0 md:block flex flex-col items-center'>
-                            <h1 className='my-2 text-4xl md:w-full w-1/2'>SOMOS SUSTENTABLES</h1>
+                            <h1 className='my-2 px-6 md:px-0 text-4xl md:w-full w-1/2'>SOMOS SUSTENTABLES</h1>
                             <p className='my-2 md:w-3/4 11/12 px-6 md:px-0'>
                                 Desde Copa Tomada nos sumamos al cuidado del medio ambiente. 
                                 Somos punto de recepción y venta de bolsas mágicas de Cyclear,  
@@ -86,9 +84,7 @@ const MENU_DATA = [
                         </div>
                 </div>
                 </div>
-            <RedLayout
-                text={[0,1,2,3].map(() => <h1>copa sustentable - punto de recepción cyclear</h1>)}
-            />
+            <RedLayout text={'copa sustentable - punto de recepción cyclear'} />
         </div>
     },
 ]

@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import ScrollingText from './Commons/ScrollingText';
 import { useThemeContext } from "../app/context/theme";
 import { useTheme } from "next-themes";
@@ -18,23 +17,44 @@ const Conocenos = () => {
       <div className='conocenos dark:bg-black'>
         <ScrollingText text={[0,1,2,3].map(() => 
           <h1 className={theme === "light" || !theme ? "empty-font-black" : "empty-font"}>
-            hola somos <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>copa</span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">hola </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">somos </span>
+            <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>copa </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">tomada </span>
           </h1>)}/>
         <ScrollingText left text={[0,1,2,3].map(() => 
           <h1 className={theme === "light" || !theme ? "empty-font-black" : "empty-font"}>
-            un grupo de <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>amigos </span>que ama tanto
+            <span className="hover:text-black duration-300 dark:hover:text-white">un </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">grupo </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">de </span>
+            <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>amigos </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">que </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">ama </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">tanto </span>
           </h1>)}/>
         <ScrollingText text={[0,1,2,3].map(() => 
           <h1 className={theme === "light" || !theme ? "empty-font-black" : "empty-font"}>
-            las <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>juntadas </span>como vos es por eso que
+            <span className="hover:text-black duration-300 dark:hover:text-white">las </span>
+            <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>juntadas </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">como </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">vos </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">es </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">por </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">eso </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">que </span>
           </h1>)}/>
         <ScrollingText left text={[0,1,2,3].map(() => 
           <h1 className={theme === "light" || !theme ? "empty-font-black" : "empty-font"}>
-            creamos este mercado de <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>bebidas</span></h1>)}/>
+            <span className="hover:text-black duration-300 dark:hover:text-white">creamos </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">este </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">mercado </span>
+            <span className="hover:text-black duration-300 dark:hover:text-white">de </span>
+            <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>bebidas</span></h1>)}/>
       </div>
-      <div className='conocenos-button dark:bg-black' onClick={toggleMenu}>
-        <p className='text-black dark:text-white'>Conocenos</p>
-        <Image width={16} height={16} alt='arrow image' src={'/assets/images/arrow.svg'} />
+      <div className='flex justify-center w-full pt-4'>
+        <button className={theme === "light" || !theme ? "" : "hover:bg-black duration-300"} onClick={toggleMenu}>
+          Conocenos
+        </button>
       </div>
     </div>
   )
