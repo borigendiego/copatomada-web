@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTheme } from "next-themes";
+
 //Style
 import  styles from './mobileMenu.module.scss';
 import { useThemeContext } from "../../app/context/theme";
@@ -16,24 +18,37 @@ type MobileMenuPropsType = {
 
 const MobileMenu = ({menuItems}:MobileMenuPropsType) => {
     const { openMenu, setOpenMenu}: any = useThemeContext();
+    const { theme, setTheme } = useTheme();
 
     return (
         <div className={styles.menuToggle}>
-            <input type="checkbox" />
-            <span />
-            <span />
-            <span />
-            <ul className={styles.menu}>
-                <Image 
-                    src={'/assets/logoheader.png'}
-                    width={100}
-                    height={100}
-                    alt={'Logo de Copa Tomada'}
-                    className={'py-4'}
-                />
+            <input type="checkbox" className='dark:bg-white bg-black' />
+            <span className='dark:bg-white' />
+            <span className='dark:bg-white' />
+            <span className='dark:bg-white' />
+            <ul className={`dark:bg-black bg-white ${styles.menu}`}>
+                {
+                    theme === 'dark' ?
+                    <Image 
+                        src={'/assets/logo_blanco_copa.png'}
+                        width={70}
+                        height={100}
+                        alt={'Logo de Copa Tomada'}
+                        className={'pb-6'}
+                    />
+                    :
+                    <Image 
+                        src={'/assets/images/logo2.png'}
+                        width={70}
+                        height={100}
+                        alt={'Logo de Copa Tomada'}
+                        className={'pb-6'}
+                    />
+                }
                 {
                     menuItems.map((link, index) => 
                         <a 
+                            className='dark:text-white'
                             onClick={() => {
                                 if(link.openNosotrosModal) {
                                     setOpenMenu(true);

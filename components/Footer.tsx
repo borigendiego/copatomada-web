@@ -9,6 +9,7 @@ import { useThemeContext } from "../app/context/theme";
 const Footer = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [openModal2, setOpenModal2] = useState<boolean>(false);
+  const [openModal3, setOpenModal3] = useState<boolean>(false);
   const { openMenu, setOpenMenu}: any = useThemeContext();
 
   return (
@@ -20,7 +21,12 @@ const Footer = () => {
           </div>
           <div className='flex md:flex-row flex-col footer-list'>
             <ul className={'dark:text-white'}>
-              <a className='font-bold' href='#conocenos'>Nosotros</a>
+              <a className='font-bold' 
+                  href='#nosotros'
+                  onClick={() => setOpenMenu(true) }
+                  >
+                Nosotros
+              </a>
               <a 
                 href='#locales'
                 onClick={() => setOpenMenu(true) }
@@ -46,7 +52,7 @@ const Footer = () => {
               <a className='font-bold md:pt-2' href='#redes'>Redes Sociales</a>
             </ul>
             <ul className={'dark:text-white'}>
-              <li className='font-bold'>Trabaja con nosotros</li>
+              <li className='font-bold cursor-pointer' onClick={() => setOpenModal3(true)}>Trabaja con nosotros</li>
             </ul>
           </div>
           <div className='flex justify-around footer-svgs'>
@@ -63,9 +69,7 @@ const Footer = () => {
                       button='QUIERO OFRECER MIS PRODUCTOS'
                       linkTo='https://linktr.ee/CopaTomada'
                     />
-                  <RedLayout
-                    text={[0,1,2,3].map(() => <h1>copa tomada - mercado de bebidas</h1>)}
-                  />
+                    <RedLayout text={'copa tomada - mercado de bebidas'}/>
               </div>
           </ModalMenu>
           <ModalMenu open={openModal2} closeModal={() => setOpenModal2(false)}>
@@ -76,8 +80,16 @@ const Footer = () => {
                     button='CONOCE NUESTRO CATÁLOGO MAYORISTA'
                     linkTo='https://linktr.ee/CopaTomada'
                 />
-                <RedLayout
-                  text={[0,1,2,3].map(() => <h1>venta mayorista venta mayorista</h1>)}
+                <RedLayout text={'copa tomada - mercado de bebidas'} />
+              </div>
+          </ModalMenu>
+          <ModalMenu open={openModal3} closeModal={() => setOpenModal3(false)}>
+            <div className='equipo'>
+                <BaseComp 
+                    title='¿QUERES FORMAR PARTE DE NUESTRO EQUIPO?' 
+                    image='/assets/images/trabaja.png' 
+                    button='ENVIA TU CV'
+                    linkTo='https://linktr.ee/CopaTomada'
                 />
               </div>
           </ModalMenu>

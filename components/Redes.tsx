@@ -14,36 +14,16 @@ const Redes = () => {
         <h1>VOLVÉ&lt;&lt;</h1>
         <h1>&gt;&gt;COPATE</h1>
       </div>
+
       <Image
-        src={'/assets/images/celular.png'} 
+        src={'/assets/images/mockup-cel.png'} 
         alt='Instagram picture' 
         width={325} 
         height={200}
         className='absolute z-10 md:w-[325px] w-56 md:left-[54.7%] left-[38%] md:bottom-[5%] bottom-[20%]'
       />
       <a href="https://www.instagram.com/copatomada/" target='_blank' rel='noreferrer' className='redes-a'>
-        <Image
-          src={'/assets/images/instagram-cel.png'} 
-          alt='Instagram picture' 
-          width={215} 
-          height={200}
-          className='absolute z-30 md:w-[214px] w-[146px] md:left-[59.3%] left-[49.2%] md:bottom-[15.5%] bottom-[26.3%]'
-        />
-        <Image
-          src={'/assets/images/celular-b.png'} 
-          alt='Instagram picture' 
-          width={220} 
-          height={200}
-          className='absolute z-20 md:w-[220px] w-[148px] md:left-[59.1%] left-[48.8%] md:bottom-[14%] bottom-[25.3%]'
-        />
-        <Image
-          src={'/assets/images/celular-play.png'} 
-          alt='Instagram picture' 
-          width={50} 
-          height={50}
-          className='absolute z-40 md:w-[50px] md:left-[65.3%] left-[63%] md:bottom-[44.8%] bottom-[43%] duration-300 ease-in-out'
-        />
-        <div className='telefono-overlay hidden md:block' />
+        <div className='telefono-overlay md:block' />
       </a>
     </div>
   )

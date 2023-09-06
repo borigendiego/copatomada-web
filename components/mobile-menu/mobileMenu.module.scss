@@ -84,7 +84,6 @@
   {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
   }
 
   /*
@@ -136,10 +135,9 @@
    */
   .menuToggle input:checked ~ .menu
   {
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
-    transform: translate(-68vw, 0);
+    width: 85vw;
+    height: 80vh;
+    transform: translate(-70vw, 0);
     padding: 3rem 2rem;
 
     li {
