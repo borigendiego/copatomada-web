@@ -46,7 +46,7 @@ const Menu = () => {
                         onClick={() => setOpenMenu(false)}
                     />
                 </div>
-                <div className="md:grid md:grid-cols-4 flex">
+                <div className="flex flex-wrap">
                     <div 
                         className="menu-section"
                         onClick={() => {
