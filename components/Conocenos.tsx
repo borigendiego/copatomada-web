@@ -13,7 +13,7 @@ const Conocenos = () => {
   };
 
   return (
-    <div className='h-screen relative overflow-hidden bg-white dark:bg-black' id={'conocenos'}>
+    <div className='md:block flex justify-center flex-col h-screen relative overflow-hidden bg-white dark:bg-black' id={'conocenos'}>
       <div className='conocenos dark:bg-black'>
         <ScrollingText text={[0,1,2,3].map(() => 
           <h1 className={theme === "light" || !theme ? "empty-font-black" : "empty-font"}>
