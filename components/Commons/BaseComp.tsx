@@ -16,7 +16,7 @@ const BaseComp = ({title, image, text, button, linkTo}:BaseProps) => {
           <Image src={image} width={750} height={400} alt='Image'/>
         </div>
         <div className='basecomp-r'>
-          <div className='md:w-[650px] md:h-[85%] my-12 mt-40 md:mt-0 md:my-0 md:block flex flex-col items-center relative z-10'>
+          <div className='md:w-[650px] md:h-[85%] my-12 mt-20 md:mt-0 md:my-0 md:block flex flex-col items-center relative z-10'>
             <h1 className='my-2 md:text-left text-center'>{title}</h1>
             <p className='my-2 md:w-3/4 11/12 px-6 md:px-0'>{text}</p>
             <a href={linkTo} target='_blank' rel='noreferrer' className='md:text-left text-center'>

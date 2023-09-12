@@ -470,10 +470,7 @@ button {
 
     .mobile-title {
         z-index: 10;
-        position: absolute;
-        bottom: 16%;
         color: #FFF;
-        text-align: center;
         
         h1 {
             font-size: 20px;
@@ -517,6 +514,7 @@ button {
     .red {
         height: 70px;
         bottom: 0;
+        overflow: hidden;
         
         h1 {
             -webkit-text-stroke: 1px white;

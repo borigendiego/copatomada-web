@@ -31,14 +31,14 @@ const Banner = () => {
           className={'w-full'}
         />  
       </div>
-      <div className='md:hidden block h-screen relative'>
+      <div className='md:hidden block h-screen absolute top-9'>
         <video 
-          src='/assets/video/home_mobile.mp4' 
+          src='/assets/video/home-mobile3.mp4' 
           autoPlay
           muted
           loop
           id={'video'}
-          className={'h-screen'}
+          className='h-screen'
         />
         <div className='mobile-title'>
           <h1>siempre es buen momento</h1>
