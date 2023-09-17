@@ -1,23 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { useTheme } from "next-themes";
-
+import ModalMenu from '../MenuModal';
+import { NAV_MENU_TYPES } from '../Types';
 //Style
 import  styles from './mobileMenu.module.scss';
 import { useThemeContext } from "../../app/context/theme";
 
-type MenuItemsType = {
-    linkTo: string,
-    label: string,
-    openNosotrosModal?: boolean
-}
-
 type MobileMenuPropsType = {
-    menuItems: MenuItemsType[]
+    menuItems: NAV_MENU_TYPES[]
 }
 
-const MobileMenu = ({menuItems}:MobileMenuPropsType) => {
+const MobileMenu = ({ menuItems }:MobileMenuPropsType) => {
     const { openMenu, setOpenMenu}: any = useThemeContext();
+    const [selectedModalDataId, setSelectedModalDataId] = useState<number>(0);
+    const [openModal, setOpenModal] = useState<boolean>(false);
     const { theme, setTheme } = useTheme();
 
     return (
@@ -53,6 +50,10 @@ const MobileMenu = ({menuItems}:MobileMenuPropsType) => {
                                 if(link.openNosotrosModal) {
                                     setOpenMenu(true);
                                 }
+                                if(link.modalContent) {
+                                    setOpenModal(true)
+                                    setSelectedModalDataId(link.id)
+                                }
                             }} 
                             key={index} 
                             href={link.linkTo}>
@@ -60,6 +61,15 @@ const MobileMenu = ({menuItems}:MobileMenuPropsType) => {
                         </a>)
                 }
             </ul>
+            <ModalMenu 
+                open={openModal} 
+                closeModal={() => setOpenModal(false)}
+                fullScreen
+            >
+                <div className={'w-full relative overflow-hidden top-[-5rem] md:top-0'}>
+                    {menuItems[selectedModalDataId].modalContent}
+                </div>
+            </ModalMenu>
         </div>
     )
 };

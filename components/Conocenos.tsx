@@ -51,7 +51,7 @@ const Conocenos = () => {
             <span className="hover:text-black duration-300 dark:hover:text-white">de </span>
             <span className={theme === "light" || !theme ? "full-font-black" : "text-white"}>bebidas</span></h1>)}/>
       </div>
-      <div className='flex justify-center w-full pt-4'>
+      <div className='flex justify-center w-full pt-4 mb-6'>
         <button className={theme === "light" || !theme ? "" : "hover:bg-black duration-300"} onClick={toggleMenu}>
           Conocenos
         </button>
