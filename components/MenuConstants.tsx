@@ -23,7 +23,7 @@ const MENU_DATA = [
                             </div>
                         </div>
                         
-                        <p className="px-6 md:px-0 my-4">
+                        <p className="px-6 md:px-0 my-4 text-sm md:text-base">
                             <span className="font-bold">
                                 Somos un Grupo de amigos </span>con el sueño de ser los Líderes en atención al cliente brindando una constante innovación de experiencia de compra con el objetivo de transimitir nuestros valores de trabajo. transparencia y honestidad, no solo para nuestros clientes sino también para nuestro equipo y la sociedad
                         </p>
@@ -80,7 +80,7 @@ const MENU_DATA = [
                         <div className='basecomp-r'>
                             <div className='md:w-[700px] md:h-[85%] my-12 md:my-0 md:block flex flex-col items-center relative md:z-10'>
                                 <h1 className='my-2 px-6 md:px-0 text-4xl md:w-full w-1/2'>SOMOS SUSTENTABLES</h1>
-                                <p className='my-2 md:w-3/4 11/12 px-6 md:px-0'>
+                                <p className='my-2 md:w-3/4 11/12 px-6 md:px-0 text-sm md:text-base'>
                                     Desde Copa Tomada nos sumamos al cuidado del medio ambiente. 
                                     Somos punto de recepción y venta de bolsas mágicas de Cyclear,  
                                     formando parte del ciclo de reciclaje consciente de residuos para 

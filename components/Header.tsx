@@ -73,7 +73,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className='hidden md:flex md:justify-around bg-white md:pt-6 md:pb-4 dark:bg-black'>
+            <div className='hidden md:flex h-[7.5rem] md:justify-around bg-white md:pt-6 md:pb-4 dark:bg-black'>
                 <a href={'/'}>
                     <Image 
                         src={'/assets/logoheader.png'}
