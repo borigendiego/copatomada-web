@@ -21,7 +21,7 @@ const BaseComp = ({title, image, text, button, linkTo}:BaseProps) => {
             <p className='my-2 md:w-3/4 11/12 px-6 md:px-0'>{text}</p>
             <a href={linkTo} target='_blank' rel='noreferrer' className='md:text-left text-center'>
               <button 
-              className={`${button ? 'mt-6 bg-[#DB0031] rounded-[50px] md:w-fit w-[80%] text-sm md:text-base  py-2 px-8 text-white' : 'hidden'}`}
+              className={`${button ? 'mt-6 bg-[#DB0031] rounded-[50px] w-fit text-sm md:text-base  py-2 px-8 text-white' : 'hidden'}`}
               >
                 {button}
               </button>

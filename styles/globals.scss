@@ -194,17 +194,8 @@ button {
 .menu {
     transform: translateX(100%);
     transition: all 600ms ease;
-    top: 0;
-    right: 0;
-    width: 100%;
-    position: fixed;
-    height: 100vh;
     background-color: #000;
     z-index: 50;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .menu-open {
@@ -282,7 +273,6 @@ button {
 /*Spinning words*/
 .words h1 {
     animation: spin_words 7s infinite;
-    font-size: 32px;
 }
 
 @keyframes spin_words {
@@ -607,19 +597,17 @@ button {
     }
 }
 
-.fa-sun {color: #f39c12;}
-
 .checkbox-label .ball {
-background-color: #fff;
-width: 22px;
-height: 22px;
-position: absolute;
-left: 2px;
-top: 2px;
-border-radius: 50%;
-transition: transform 0.2s linear;
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .checkbox-label .ball {
-transform: translateX(26px);
+.checkbox:checked + .checkbox-label .ball, .dark .ball {
+    transform: translateX(26px);
 }

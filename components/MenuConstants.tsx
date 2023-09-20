@@ -12,18 +12,21 @@ const MENU_DATA = [
                     </div>
                     <div className="flex flex-col md:flex-col pt-16 md:w-[500px] md:h-[500px] text-white md:pl-8 wrapper relative md:z-10">
                         <div className={'wrapper flex flex-wrap md:flex-nowrap'}>
-                            <h1 className="text-[32px] flex flex-col md:flex-row pl-6 md:pl-0 pt-6 md:pt-0 empty-font">
+                            <h1 className="text-[20px] md:text-[32px] flex flex-col md:flex-row pl-6 md:pl-0 pt-0 empty-font">
                                 SOMOS
                             </h1>
                             <div className={'words overflow-hidden h-[40px] pl-5'}>
-                                <h1 className={'block h-full'}>AMIGOS</h1>
-                                <h1 className={'block h-full'}>RISAS</h1>
-                                <h1 className={'block h-full'}>DIVERSION</h1>
-                                <h1 className={'block h-full'}>COPA TOMADA</h1>
+                                <h1 className={'block h-full text-[20px] md:text-[32px]'}>AMIGOS</h1>
+                                <h1 className={'block h-full text-[20px] md:text-[32px]'}>RISAS</h1>
+                                <h1 className={'block h-full text-[20px] md:text-[32px]'}>DIVERSION</h1>
+                                <h1 className={'block h-full text-[20px] md:text-[32px]'}>COPA TOMADA</h1>
                             </div>
                         </div>
                         
-                        <p className="px-6 md:px-0 my-4"><span className="font-bold ">Somos un Grupo de amigos </span>con el sueño de ser los Líderes en atención al cliente brindando una constante innovación de experiencia de compra con el objetivo de transimitir nuestros valores de trabajo. transparencia y honestidad, no solo para nuestros clientes sino también para nuestro equipo y la sociedad</p>
+                        <p className="px-6 md:px-0 my-4">
+                            <span className="font-bold">
+                                Somos un Grupo de amigos </span>con el sueño de ser los Líderes en atención al cliente brindando una constante innovación de experiencia de compra con el objetivo de transimitir nuestros valores de trabajo. transparencia y honestidad, no solo para nuestros clientes sino también para nuestro equipo y la sociedad
+                        </p>
                     </div>
                     <img src={'/assets/images/lines-bg.png'} alt='Lines background' className='lines-bg' />
                     <RedLayout />

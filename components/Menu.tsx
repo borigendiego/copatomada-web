@@ -35,7 +35,7 @@ const Menu = () => {
 
     return(
         <div>
-            <div className={`${ openMenu ? 'menu menu-open' : 'menu'}`}>
+            <div className={`flex flex-col items-center justify-center fixed w-full h-screen top-0 right-0 pt-6 md:pt-0 ${ openMenu ? 'menu menu-open' : 'menu'}`}>
                 <div className="flex md:justify-between justify-around md:max-w-[1000px] w-full md:pt-8">
                     <h1 className='empty-font menu-title'>ESTO ES <br className="md:hidden"/> COPA TOMADA</h1>
                     <Image 
