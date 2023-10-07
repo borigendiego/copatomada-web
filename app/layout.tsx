@@ -22,6 +22,7 @@ export default function RootLayout({
           />
           <meta property='og:type' content='website' />
           <meta property='og:title' content='Copa Tomada' />
+          <meta property='og:image' content='https://copatomada.com.ar/assets/logoheader.png' />
           <meta property='og:description' content="Somos un negocio de ventas de bebidas en Nueva Córdoba. ¡Pedí lo que quieras y te lo llevamos!" />
           <meta property='og:site_name' content='Copa Tomada' />
           <script type="application/ld+json"
