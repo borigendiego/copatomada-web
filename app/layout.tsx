@@ -23,11 +23,11 @@ export default function RootLayout({
           <meta name="theme-color" content="#000000" />
           <meta
               name="description"
-              content="Venta de bebidas. Somos un grupo de amigos con el sueño de ser los Líderes en atención al cliente brindando una constante innovación de experiencia de compra con el objetivo de transimitir nuestros valores de trabajo."
+              content="Somos un negocio de ventas de bebidas en Nueva Córdoba. ¡Pedí lo que quieras y te lo llevamos!"
           />
           <meta property='og:type' content='website' />
           <meta property='og:title' content='Copa Tomada' />
-          <meta property='og:description' content="Venta de bebidas. Somos un grupo de amigos con el sueño de ser los Líderes en atención al cliente brindando una constante innovación de experiencia de compra con el objetivo de transimitir nuestros valores de trabajo." />
+          <meta property='og:description' content="Somos un negocio de ventas de bebidas en Nueva Córdoba. ¡Pedí lo que quieras y te lo llevamos!" />
           <meta property='og:site_name' content='Copa Tomada' />
           <script type="application/ld+json"
               dangerouslySetInnerHTML={{
