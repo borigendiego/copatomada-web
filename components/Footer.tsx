@@ -22,14 +22,14 @@ const Footer = () => {
           <div className='flex md:flex-row flex-col footer-list'>
             <ul className={'dark:text-white'}>
               <li className={'my-1 md:my-0'}>
-                <a className='font-bold' 
+                <a className='font-bold hover:underline' 
                   href='#nosotros'
                   onClick={() => setOpenMenu(true) }
                 >
                   Nosotros
                 </a>
               </li>
-              <li className={'my-1 md:my-0'}>
+              <li className={'my-1 hover:underline'}>
                 <a 
                   href='#locales'
                   onClick={() => setOpenMenu(true) }
@@ -37,7 +37,7 @@ const Footer = () => {
                   Locales
                 </a>
               </li>
-              <li className={'my-1 md:my-0'}>
+              <li className={'my-1 md:my-0 hover:underline'}>
                 <a 
                   href='#delivery'
                   onClick={() => setOpenMenu(true) }
@@ -45,7 +45,7 @@ const Footer = () => {
                   Delivery
                 </a>
               </li>
-              <li className={'my-1 md:my-0'}>
+              <li className={'my-1 hover:underline'}>
                 <a 
                   href='#sustentable'
                   onClick={() => setOpenMenu(true) }
@@ -57,7 +57,7 @@ const Footer = () => {
             </ul>
             <ul className={'dark:text-white'}>
               <li 
-                className='font-bold cursor-pointer my-1 md:my-0'
+                className='font-bold cursor-pointer my-1 md:my-0 hover:underline'
                 onClick={() => {
                   setOpenModal(true);
                   setSelectedModalDataId(3) //Id de venta mayorista
@@ -66,7 +66,7 @@ const Footer = () => {
                 Venta Mayorista
               </li>
               <li 
-                className='font-bold md:pt-2 cursor-pointer my-1 md:my-0' 
+                className='font-bold md:pt-2 cursor-pointer my-1 md:my-0 hover:underline' 
                 onClick={() => {
                   setOpenModal(true);
                   setSelectedModalDataId(2) //Id de proveedores
@@ -74,18 +74,18 @@ const Footer = () => {
               >
                 Proveedores
               </li>
-              <li className={'my-1 md:my-0'}>
-                <a className='font-bold md:pt-2' href='#redes'>Redes Sociales</a>
+              <li className={'my-1 md:my-0 md:pt-2 hover:underline'}>
+                <a className='font-bold ' href='#redes'>Redes Sociales</a>
               </li>
             </ul>
             <ul className={'dark:text-white'}>
-              <li className='font-bold cursor-pointer my-1 md:my-0' onClick={() => setOpenModal3(true)}>Trabaja con nosotros</li>
+              <li className='font-bold cursor-pointer my-1 md:my-0 hover:underline' onClick={() => setOpenModal3(true)}>Trabaja con nosotros</li>
             </ul>
           </div>
           <div className='flex justify-around footer-svgs'>
-            <a href="https://www.facebook.com/copatomada" className='mx-4'><Image src={'/assets/images/facebook-svg.svg'} alt='Facebook' width={30} height={20}/></a>
-            <a href="https://twitter.com/CopaTomada" className='mx-4'><Image src={'/assets/images/twitter-svg.svg'} alt='Twitter' width={30} height={20}/></a>
-            <a href="https://www.instagram.com/copatomada/" className='mx-4'><Image src={'/assets/images/instagram-svg.svg'} alt='Instagram' width={30} height={20}/></a>
+            <a href="https://www.facebook.com/copatomada" className='mx-4 duration-300 hover:scale-125 cursor-pointer'><Image src={'/assets/images/facebook-svg.svg'} alt='Facebook' width={30} height={20}/></a>
+            <a href="https://twitter.com/CopaTomada" className='mx-4 duration-300 hover:scale-125 cursor-pointer'><Image src={'/assets/images/twitter-svg.svg'} alt='Twitter' width={30} height={20}/></a>
+            <a href="https://www.instagram.com/copatomada/" className='mx-4 duration-300 hover:scale-125 cursor-pointer'><Image src={'/assets/images/instagram-svg.svg'} alt='Instagram' width={30} height={20}/></a>
           </div>
 
 
@@ -105,7 +105,7 @@ const Footer = () => {
               </div>
           </ModalMenu>
       </div>
-      <p className='text-center py-6 bg-white dark:bg-black dark:text-white text-black'>
+      <p className='text-center py-6 bg-white dark:bg-black dark:text-white text-black hover:underline'>
         <a href='https://www.thehipposoft.com/' rel='noreferrer' target='_blank'>Created by <span className='font-semibold'>HippoSoft</span> | All Right Reserved</a>
       </p>
     </>

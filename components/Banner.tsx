@@ -1,7 +1,7 @@
 'use client'
-
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Banner = () => {
 
@@ -14,14 +14,16 @@ const Banner = () => {
     return () => clearInterval(interval);
   }, [selectedBanner]);
 
-
   return (
     <div>
-      <div className={`h-screen relative md:block hidden`}>
-        <div className='banner-title'>
-          <h1>siempre es buen momento</h1>
-          <h1 className='sub-title'>para festejar</h1>
+      <div className={`md:h-screen relative md:block hidden`}>
+        <div className='absolute top-[65%] z-10 text-white right-[70px]'>
+          <h1 className='flex justify-end text-6xl'>siempre es buen momento</h1>
+          <h1 className='flex justify-end text-6xl'>para festejar</h1>
         </div>
+        <Link href={'https://pedix.app/copa-tomada/'} rel='noreferrer' target='_blank' className='button cursor-pointer bottom-8 left-0 right-0 z-20 absolute mx-auto w-32 hover:bg-transparent hover:text-white'>
+          Pedi YA
+        </Link>
         <video 
           src='/assets/video/home_copa.mp4' 
           autoPlay
@@ -38,12 +40,15 @@ const Banner = () => {
           muted
           loop
           id={'video'}
-          className='absolute top-8'
+          className='absolute top-16'
         />
-        <div className='mobile-title'>
-          <h1>siempre es buen momento</h1>
-          <h1>para festejar</h1>
+        <div className='absolute z-10 text-white bottom-56'>
+          <h1 className='text-2xl mx-auto w-[70%]'>siempre es buen momento</h1>
+          <h1 className='text-2xl mx-auto w-[70%]'>para festejar</h1>
         </div>
+        <Link href={'https://pedix.app/copa-tomada/'} rel='noreferrer' target='_blank' className='button cursor-pointer bottom-32 left-0 right-0 z-20 text-center absolute mx-auto md:w-32 w-36 hover:bg-transparent hover:text-white'>
+          Pedi YA
+        </Link>
       </div>
     </div>
   )

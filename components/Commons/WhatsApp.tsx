@@ -5,7 +5,7 @@ import Image from 'next/image';
 const WhatsApp = () => {
     return(
         <div className='fixed flex cursor-pointer bottom-[20px] right-[40px] md:right-[70px] z-40'>
-           <a href={'telto:+54 9 3512 00-3877'} target={'_blank'} rel="noreferrer" className='hover:scale-125 transition-all duration-500 pr-1'>
+           <a href={'https://api.whatsapp.com/send?phone=543512003877'} target={'_blank'} rel="noreferrer" className='hover:scale-125 transition-all duration-500 pr-1'>
                 <Image 
                         alt={'WhatsApp icon'} 
                         src={'/assets/images/whatsapp.png'}

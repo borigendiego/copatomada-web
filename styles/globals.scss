@@ -25,13 +25,13 @@ p, a, li {
     font-family: $montserrat-regular;
 }
 
-button {
+button, .button {
     background-color: $main-red;
     border-radius: 50px;
     padding: 0.5em 2em;
     color: #fff;
     border: solid 1px $main-red;
-    transition: all 300ms ease-in-out;
+    transition: all 400ms ease-in-out;
 
     &:hover {
         background-color: #FFF;
@@ -69,20 +69,7 @@ button {
 }
 
 //Banner
- 
-.banner-title {
-    position: absolute;
-    top: 60%;
-    z-index: 10;
-    color: white;
-    
-    h1 {
-        display: flex;
-        justify-content: flex-end;
-        font-size: 64px;
-    }
 
-}
 
 .banner-title-mb {
     position: absolute;
@@ -458,19 +445,7 @@ button {
         background-size: contain;
     }
 
-    .mobile-title {
-        z-index: 10;
-        color: #FFF;
-        position: absolute;
-        bottom: 8em;
-        
-        h1 {
-            font-size: 20px;
-            width: fit-content;
-            margin: 0 auto;
-            width: 70%;
-        }
-    }
+
 
     .menu-section {
         width: 80px;
